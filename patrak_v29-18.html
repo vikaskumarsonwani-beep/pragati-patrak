@@ -1,0 +1,2102 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>प्रगति पत्रक | शा.हाई स्कूल मोढ़े</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+function makeQR(div, text){
+  div.innerHTML='';
+  var img=document.createElement('img');
+  img.src='https://api.qrserver.com/v1/create-qr-code/?size=58x58&data='+encodeURIComponent(text)+'&color=1a1a6e&bgcolor=ffffff&margin=2';
+  img.style.cssText='width:58px;height:58px;display:block;';
+  img.alt='QR';
+  div.appendChild(img);
+}
+</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;} input[type=number]{-webkit-appearance:none;-moz-appearance:textfield;appearance:textfield;} input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0;}
+body{font-family:'Noto Sans Devanagari',sans-serif;background:#eef1f8;font-size:14px;}
+input,button,select{font-family:inherit;}
+.nav{background:#4a6fa5;color:white;padding:10px 14px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:100;}
+.nav img{width:36px;height:36px;border-radius:50%;object-fit:cover;}
+.nav-title{font-size:13px;font-weight:700;flex:1;}
+.badge{font-size:10px;background:#15803d;padding:3px 8px;border-radius:10px;color:white;}
+.tabs{display:flex;overflow-x:auto;background:white;border-bottom:2px solid #4a6fa5;padding:0 4px;}
+.tab{padding:8px 10px;border:none;background:none;cursor:pointer;font-family:inherit;font-size:11px;font-weight:600;color:#888;white-space:nowrap;border-bottom:3px solid transparent;margin-bottom:-2px;flex-shrink:0;}
+.tab.on{color:#4a6fa5;border-bottom-color:#4a6fa5;}
+.page{display:none;padding:12px;}
+.page.on{display:block;}
+.card{background:white;border-radius:8px;padding:12px;margin-bottom:10px;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+.ct{font-size:13px;font-weight:700;color:#2c3e7a;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid #eee;}
+label{display:block;font-size:11px;font-weight:600;color:#555;margin-bottom:2px;margin-top:6px;}
+input[type=text],input[type=number]{width:100%;padding:8px 10px;border:1.5px solid #d0d5e8;border-radius:6px;font-size:13px;outline:none;}
+input:focus{border-color:#2c3e7a;}
+.btn{padding:9px 16px;border:none;border-radius:7px;cursor:pointer;font-family:inherit;font-size:13px;font-weight:700;color:white;margin-top:6px;}
+.bp{background:#4a6fa5;}.bg{background:#15803d;}.br{background:#e53935;}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.info{font-size:11px;color:#666;background:#f0f4ff;padding:6px 10px;border-radius:6px;margin-bottom:8px;}
+.tbl{width:100%;border-collapse:collapse;font-size:11px;}
+.tbl th{background:#dde4f5;color:#1a1a6e;padding:6px 3px;border:1px solid #b0bbd5;text-align:center;font-size:12px;}
+.tbl td{padding:4px 2px;border:1px solid #e0e0e0;text-align:center;background:white;font-size:12px;}
+.tbl tr:nth-child(even) td{background:#fafafa;}
+.tbl input{width:38px;padding:3px;border:1px solid #ccc;border-radius:3px;text-align:center;font-size:11px;font-family:inherit;}
+.yog{font-weight:700;background:#eef2ff!important;}
+.nav-btn{display:flex;gap:8px;margin-top:10px;}
+.nav-btn button{flex:1;}
+/* भरते समय सभी column एक ही screen में - compact inputs */
+.tbl input{width:34px;}
+/* A4 page settings */
+@page { size:A4 portrait; margin:6mm 8mm 6mm 8mm; }
+
+@media print{
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;color-adjust:exact!important;box-sizing:border-box!important;}
+  .nav,.tabs,.nav-btn,.card,.btn,.info,.no-print,.page{display:none!important;}
+  body{background:white!important;margin:0!important;padding:0!important;font-size:13px!important;}
+  #printArea{display:block!important;width:100%!important;padding:0!important;margin:0!important;}
+  #printArea > .print-page{
+    page-break-after:always;break-after:page;
+    overflow:hidden!important;
+    width:100%!important;
+    padding:0!important;margin:0!important;
+  }
+  #printArea > .print-page:last-child{page-break-after:auto;break-after:auto;}
+  .patrak-page{
+    transform-origin:top left;
+    width:100%!important;
+    max-width:100%!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+}
+
+/* फॉन्ट */
+body{ font-size:13px; }
+</style>
+</head>
+<body>
+<div class="nav">
+<img alt="S" src="data:image/jpeg;base64,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"/>
+<div class="nav-title">प्रगति पत्रक प्रणाली<br/><span style="font-size:9px;opacity:.7;">शा.हाई स्कूल मोढ़े</span></div>
+<span class="badge" id="badge">✅ Saved</span>
+</div>
+<div class="tabs">
+<button class="tab on" id="tb-home" onclick="go('home')">🏠 Home</button>
+<button class="tab" id="tb-student" onclick="go('student')">👤 छात्र</button>
+<button class="tab" id="tb-ikai" onclick="go('ikai')">📝 इकाई</button>
+<button class="tab" id="tb-trai" onclick="go('trai')">📋 त्रैमासिक</button>
+<button class="tab" id="tb-ardh" onclick="go('ardh')">📋 अर्धवार्षिक</button>
+<button class="tab" id="tb-varsh" onclick="go('varsh')">📋 वार्षिक</button>
+<button class="tab" id="tb-purak" onclick="go('purak')">📝 पूरक</button>
+<button class="tab" id="tb-summary" onclick="go('summary')">📊 Summary</button>
+<button class="tab" id="tb-search" onclick="go('search')">🔍 खोज</button>
+<button class="tab" id="tb-analysis" onclick="go('analysis')">📈 Analysis</button>
+<button class="tab" id="tb-preview" onclick="go('preview')">👁️ Preview</button>
+<button class="tab" id="tb-print" onclick="go('print')">🖨️ Print</button>
+</div>
+<!-- HOME -->
+<div class="page on" id="page-home">
+<div class="card" style="text-align:center;padding:16px;">
+<img src="data:image/jpeg;base64,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" style="width:72px;height:72px;border-radius:50%;object-fit:cover;margin-bottom:8px;"/>
+<div style="font-size:17px;font-weight:700;color:#1a1a6e;">शासकीय हाई स्कूल मोढ़े</div>
+<div style="font-size:11px;color:#666;margin-top:4px;">विकास खण्ड: तखतपुर | जिला: बिलासपुर (छ.ग.)</div>
+<div style="font-size:11px;color:#15803d;font-weight:600;margin-top:6px;">✅ डेटा automatically save होता है</div>
+</div>
+<div class="card">
+<div class="ct">➕ नई कक्षा शुरू करें</div>
+<div class="row2">
+<div><label>सत्र से (20__)</label><input id="s1" maxlength="2" type="text" value="25"/></div>
+<div><label>सत्र तक (20__)</label><input id="s2" maxlength="2" type="text" value="26"/></div>
+</div>
+<label>कक्षा</label>
+<input id="kk" placeholder="जैसे: 9वीं" type="text" value="9वीं"/>
+<button class="btn bp" onclick="startClass()" style="width:100%;margin-top:10px;">➕ शुरू करें</button>
+</div>
+<div class="card">
+<div class="ct">💾 सेव की हुई कक्षाएं</div>
+<div id="classList"><div style="color:#aaa;text-align:center;padding:10px;">कोई डेटा नहीं</div></div>
+</div>
+</div>
+<!-- STUDENT -->
+<div class="page" id="page-student">
+<div class="card">
+<div class="ct">👤 छात्र — <span id="clsInfo" style="color:#666;font-weight:400;font-size:12px;"></span></div>
+<div id="stdForms"></div>
+<button class="btn bp" onclick="addStudent()" style="width:100%;">+ नया छात्र जोड़ें</button>
+</div>
+<div class="nav-btn">
+<button class="btn bp" onclick="go('ikai')">अगला → इकाई →</button>
+</div>
+</div>
+<!-- IKAI -->
+<div class="page" id="page-ikai">
+<div class="card">
+<div class="ct">📝 इकाई मूल्यांकन (1-6)</div>
+<div class="info">प्रत्येक इकाई का अंक भरें</div>
+<div style="overflow-x:auto;"><table class="tbl" id="ikaiTbl"></table></div>
+</div>
+<div class="nav-btn">
+<button class="btn" onclick="go('student')" style="background:#555;">← वापस</button>
+<button class="btn bp" onclick="go('trai')">→ त्रैमासिक</button>
+</div>
+</div>
+<!-- TRAI -->
+<div class="page" id="page-trai">
+<div class="card">
+<div class="ct">📋 त्रैमासिक परीक्षा</div>
+<div class="info">सैद्धांतिक (75) + प्रायोगिक (25) — योग auto</div>
+<div style="overflow-x:auto;"><table class="tbl" id="traiTbl"></table></div>
+</div>
+<div class="nav-btn">
+<button class="btn" onclick="go('ikai')" style="background:#555;">← वापस</button>
+<button class="btn bp" onclick="go('ardh')">→ अर्धवार्षिक</button>
+</div>
+</div>
+<!-- ARDH -->
+<div class="page" id="page-ardh">
+<div class="card">
+<div class="ct">📋 अर्धवार्षिक (30% अधिभार)</div>
+<div class="info" style="background:#fff0f0;">सैद्धांतिक (75) + प्रायोगिक (25) — योग × 30%</div>
+<div style="overflow-x:auto;"><table class="tbl" id="ardhTbl"></table></div>
+</div>
+<div class="nav-btn">
+<button class="btn" onclick="go('trai')" style="background:#555;">← वापस</button>
+<button class="btn bp" onclick="go('varsh')">→ वार्षिक</button>
+</div>
+</div>
+<!-- VARSH -->
+<div class="page" id="page-varsh">
+<div class="card">
+<div class="ct">📋 वार्षिक परीक्षा (70% अधिभार)</div>
+<div class="info" style="background:#f0fff0;">सैद्धांतिक (75) + प्रायोगिक (25) — योग × 70%</div>
+<div style="overflow-x:auto;"><table class="tbl" id="varshTbl"></table></div>
+</div>
+<div class="nav-btn">
+<button class="btn" onclick="go('ardh')" style="background:#555;">← वापस</button>
+<button class="btn bp" onclick="go('purak')">→ पूरक एंट्री</button>
+<button class="btn bg" onclick="go('summary')">→ Summary</button>
+</div>
+</div>
+<!-- PURAK -->
+<div class="page" id="page-purak">
+<div class="card">
+<div class="ct">📝 पूरक/अवसर परीक्षा अंक एंट्री</div>
+<div class="info" style="background:#fff8f0;">पूरक/अनुत्तीर्ण छात्रों के लिए — प्रत्येक विषय का सैद्धांतिक (75) + प्रायोगिक (25) अंक भरें</div>
+<div style="overflow-x:auto;"><table class="tbl" id="purakTbl"></table></div>
+</div>
+<div class="nav-btn">
+<button class="btn" onclick="go('varsh')" style="background:#555;">← वापस</button>
+<button class="btn bp" onclick="go('summary')">→ Summary</button>
+</div>
+</div>
+<!-- SUMMARY -->
+<div class="page" id="page-summary">
+<div style="padding:8px;background:#f0f4ff;border-radius:8px;margin-bottom:8px;font-size:11px;color:#555;">
+    📊 कक्षा का सम्पूर्ण परीक्षाफल सारांश
+  </div>
+<div style="display:flex;gap:8px;margin-bottom:8px;">
+<button class="btn bg" onclick="printSummary()" style="flex:1;margin-top:0;">🖨️ Summary Print/PDF</button>
+<button class="btn" onclick="exportCSV()" style="flex:1;margin-top:0;background:#1565c0;">📤 CSV Export</button>
+</div>
+<div id="summaryContent"></div>
+<div class="nav-btn">
+<button class="btn" onclick="go('varsh')" style="background:#555;">← वापस</button>
+<button class="btn bg" onclick="go('preview')">👁️ Preview →</button>
+</div>
+</div>
+<!-- SEARCH -->
+<div class="page" id="page-search">
+<div class="card">
+<div class="ct">🔍 छात्र खोज</div>
+<input id="searchInput" oninput="doSearch(this.value)" placeholder="नाम या अनुक्रमांक लिखें..." style="margin-bottom:8px;" type="text"/>
+<div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap;">
+<button id="sf-all" onclick="filterSearch('all')" style="padding:4px 10px;border:1.5px solid #4a6fa5;background:#4a6fa5;color:white;border-radius:5px;font-size:11px;cursor:pointer;font-family:inherit;">सभी</button>
+<button id="sf-pass" onclick="filterSearch('pass')" style="padding:4px 10px;border:1.5px solid #15803d;background:white;color:#15803d;border-radius:5px;font-size:11px;cursor:pointer;font-family:inherit;">उत्तीर्ण</button>
+<button id="sf-purak" onclick="filterSearch('purak')" style="padding:4px 10px;border:1.5px solid #f57c00;background:white;color:#f57c00;border-radius:5px;font-size:11px;cursor:pointer;font-family:inherit;">पूरक</button>
+<button id="sf-fail" onclick="filterSearch('fail')" style="padding:4px 10px;border:1.5px solid #c62828;background:white;color:#c62828;border-radius:5px;font-size:11px;cursor:pointer;font-family:inherit;">अनुत्तीर्ण</button>
+</div>
+<div id="searchResults"></div>
+</div>
+</div>
+<!-- ANALYSIS -->
+<div class="page" id="page-analysis">
+<div class="card">
+<div class="ct">📈 विषय-वार विश्लेषण</div>
+<div id="analysisContent"></div>
+</div>
+</div>
+<!-- PREVIEW -->
+<div class="page" id="page-preview">
+<div style="padding:8px;background:#f0f4ff;border-radius:8px;margin-bottom:8px;font-size:11px;color:#555;">
+    💡 नीचे प्रत्येक छात्र की पूरी Marksheet दिख रही है। Print के लिए Print टैब पर जाएं।
+  </div>
+<div id="previewContent" style="overflow-x:auto;"></div>
+<div class="nav-btn">
+<button class="btn" onclick="go('varsh')" style="background:#555;">← वापस</button>
+<button class="btn bg" onclick="go('print')">🖨️ Print →</button>
+</div>
+</div>
+<!-- PRINT -->
+<div class="page" id="page-print">
+<div class="card">
+<div class="ct">🖨️ Print / Download करें</div>
+<div style="display:flex;gap:8px;margin-bottom:8px;">
+<button class="btn bg" onclick="printAll('portrait')" style="flex:1;">🖨️ Portrait Print</button>
+<button class="btn" onclick="printAll('landscape')" style="flex:1;background:#1565c0;">🖨️ Landscape Print</button>
+</div>
+<div class="no-print" style="font-size:11px;color:#666;background:#f0f4ff;padding:6px 10px;border-radius:6px;margin-bottom:8px;">
+      💡 Print dialog में <b>"Save as PDF"</b> select करें — PDF download होगी!<br>
+      Portrait = सीधा A4 | Landscape = आड़ा A4 (ज्यादा चौड़ाई)
+    </br></div>
+<div id="printList"></div>
+</div>
+<!-- नोटिस बोर्ड -->
+<div class="card" style="border:2px solid #7b1fa2;">
+<div class="ct" style="color:#7b1fa2;">📋 नोटिस बोर्ड परीक्षाफल</div>
+<div style="font-size:11px;color:#666;background:#f9f0ff;padding:8px 10px;border-radius:6px;margin-bottom:10px;">
+      सभी बच्चों का परीक्षाफल एक A4 sheet में — प्रिंट करके नोटिस बोर्ड पर चिपकाएं।
+    </div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;">
+<button class="btn" onclick="printNoticeboard('portrait')" style="background:#7b1fa2;flex:1;margin-top:0;">📋 Portrait (सीधा)</button>
+<button class="btn" onclick="printNoticeboard('landscape')" style="background:#4a148c;flex:1;margin-top:0;">📋 Landscape (आड़ा)</button>
+</div>
+<div id="noticeboardPreview" style="margin-top:10px;"></div>
+</div>
+</div>
+<div id="printArea" style="display:none;"></div>
+<script>
+var SUBJ = ['हिन्दी','अंग्रेजी','संस्कृत','गणित','विज्ञान','सामा.विज्ञान'];
+var NIYAM = [
+  'छात्र/छात्राओं को प्रतिदिन विद्यालयीन गणवेश में उपस्थित होना अनिवार्य है।',
+  'शाला के समस्त नियमों एवं अनुशासन का पालन करना अनिवार्य है।',
+  'वार्षिक परीक्षा में सम्मिलित होने हेतु 75% उपस्थिति अनिवार्य है।',
+  'परीक्षा उपरांत अभिभावक हस्ताक्षर अवश्य करें।',
+  'अभिभावक कक्षा शिक्षक से सम्पर्क बनाये रखें।',
+  'पूरक परीक्षार्थी फल घोषित होने पर तत्काल कक्षा शिक्षक से सम्पर्क करें।',
+  'प्रगति पत्रक गुम होने पर निर्धारित शुल्क व शपथ-पत्र जमाकर द्वितीय प्रति प्राप्त करें।'
+];
+var SARA = 'data:image/jpeg;base64,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';
+var SKEY = 'pp-v5'; // localStorage migration key
+var IDB_NAME = 'pragatiPatrak';
+var IDB_STORE = 'savedData';
+var IDB_KEY = 'allClasses';
+var cls = {s1:'25',s2:'26',kk:'',students:[],marks:{}};
+var saved = [];
+var activeIdx = -1;
+var _idb = null;
+
+function openIDB(cb){
+  if(_idb){ cb(_idb); return; }
+  var req=indexedDB.open(IDB_NAME,1);
+  req.onupgradeneeded=function(e){ e.target.result.createObjectStore(IDB_STORE); };
+  req.onsuccess=function(e){ _idb=e.target.result; cb(_idb); };
+  req.onerror=function(){ cb(null); };
+}
+
+function idbSet(val,cb){
+  openIDB(function(db){
+    if(!db){ cb&&cb(false); return; }
+    var tx=db.transaction(IDB_STORE,'readwrite');
+    var req=tx.objectStore(IDB_STORE).put(val,IDB_KEY);
+    req.onsuccess=function(){ cb&&cb(true); };
+    req.onerror=function(){ cb&&cb(false); };
+  });
+}
+
+function idbGet(cb){
+  openIDB(function(db){
+    if(!db){ cb(null); return; }
+    var tx=db.transaction(IDB_STORE,'readonly');
+    var req=tx.objectStore(IDB_STORE).get(IDB_KEY);
+    req.onsuccess=function(){ cb(req.result||null); };
+    req.onerror=function(){ cb(null); };
+  });
+}
+
+function save(){
+  if(activeIdx>=0) saved[activeIdx]=JSON.parse(JSON.stringify(cls));
+  var data=JSON.parse(JSON.stringify(saved));
+  idbSet(data,function(ok){
+    if(ok){
+      document.getElementById('badge').textContent='✅ Saved';
+    } else {
+      try{
+        localStorage.setItem('pp-v6',JSON.stringify(data));
+        document.getElementById('badge').textContent='✅ Saved';
+      }catch(e){
+        document.getElementById('badge').textContent='⚠️ Save Error!';
+        alert('Storage full! Browser cache clear करें।');
+      }
+    }
+  });
+}
+
+function _restoreData(data){
+  saved=data||[];
+  var validIdx=-1;
+  for(var i=saved.length-1;i>=0;i--){
+    if(saved[i]&&saved[i].kk&&saved[i].students&&saved[i].students.length>0){ validIdx=i; break; }
+  }
+  if(validIdx>=0){
+    cls=JSON.parse(JSON.stringify(saved[validIdx]));
+    activeIdx=validIdx;
+    var ci=document.getElementById('clsInfo');
+    if(ci) ci.textContent='कक्षा '+cls.kk+' | सत्र 20'+cls.s1+'-20'+cls.s2;
+  }
+  showClasses();
+}
+
+function load(){
+  idbGet(function(idbData){
+    if(idbData&&Array.isArray(idbData)&&idbData.length>0){
+      _restoreData(idbData);
+    } else {
+      // पुराने localStorage से migrate करो
+      var d=localStorage.getItem(SKEY)||localStorage.getItem('pp-v6');
+      if(d){
+        try{
+          var parsed=JSON.parse(d);
+          idbSet(parsed,function(){}); // IndexedDB में copy
+          _restoreData(parsed);
+        }catch(e){ _restoreData([]); }
+      } else {
+        _restoreData([]);
+      }
+    }
+  });
+}
+
+function go(tab){
+  document.querySelectorAll('.page').forEach(function(p){ p.classList.remove('on'); });
+  document.querySelectorAll('.tab').forEach(function(t){ t.classList.remove('on'); });
+  var pg=document.getElementById('page-'+tab);
+  if(pg) pg.classList.add('on');
+  var t=document.getElementById('tb-'+tab);
+  if(t) t.classList.add('on');
+  window.scrollTo(0,0);
+  // अगर cls empty है तो saved से auto-load करो
+  if(!cls.kk && saved.length>0){
+    for(var i=saved.length-1;i>=0;i--){
+      if(saved[i]&&saved[i].kk&&saved[i].students&&saved[i].students.length>0){
+        cls=JSON.parse(JSON.stringify(saved[i]));
+        activeIdx=i;
+        var ci=document.getElementById('clsInfo');
+        if(ci) ci.textContent='कक्षा '+cls.kk+' | सत्र 20'+cls.s1+'-20'+cls.s2;
+        break;
+      }
+    }
+  }
+  if(tab==='ikai') buildIkaiTable();
+  if(tab==='trai') buildExamTable('traiTbl','trai','#455a7a');
+  if(tab==='ardh') buildExamTable('ardhTbl','ardh','#c0392b');
+  if(tab==='varsh') buildExamTable('varshTbl','varsh','#27693a');
+  if(tab==='search'){
+    doSearch(''); filterSearch('all');
+  }
+  if(tab==='analysis'){
+    var elA=document.getElementById('analysisContent');
+    if(!cls.students||cls.students.length===0){
+      if(elA) elA.innerHTML='<div style="color:#aaa;text-align:center;padding:20px;">पहले छात्र और अंक भरें।</div>';
+    } else {
+      try{ if(elA){ elA.innerHTML=''; buildAnalysis(elA); } }catch(err){ console.error('Analysis error:',err); }
+    }
+  }
+  if(tab==='purak') buildPurakTable();
+  if(tab==='summary'){
+    var elS=document.getElementById('summaryContent');
+    if(!cls.students||cls.students.length===0){
+      if(elS) elS.innerHTML='<div style="color:#aaa;text-align:center;padding:20px;">पहले छात्र और अंक भरें।</div>';
+    } else {
+      try{
+        if(elS){
+          elS.innerHTML='';
+          buildSummaryView(elS);
+          var detDiv=document.createElement('div');
+          detDiv.style.cssText='margin-top:10px;';
+          var detHdr=document.createElement('div');
+          detHdr.style.cssText='font-size:12px;font-weight:700;color:#1a1a6e;margin-bottom:8px;padding:6px 10px;background:#dde4f5;border-radius:6px;';
+          detHdr.textContent='📋 छात्र-वार विस्तृत अंक तालिका';
+          detDiv.appendChild(detHdr);
+          elS.appendChild(detDiv);
+          buildDetailView(detDiv);
+        }
+      }catch(err){ console.error('Summary error:',err); }
+    }
+  }
+  if(tab==='preview'){
+    if(!cls.students||cls.students.length===0){
+      var el=document.getElementById('previewContent');
+      if(el) el.innerHTML='<div style="color:#aaa;text-align:center;padding:20px;">पहले छात्र और अंक भरें।</div>';
+    } else {
+      try{ buildPreview(); }catch(err){ console.error('Preview error:',err); }
+    }
+  }
+  if(tab==='print'){
+    if(!cls.students||cls.students.length===0){
+      var el2=document.getElementById('printList');
+      if(el2) el2.innerHTML='<div style="color:#aaa;text-align:center;padding:10px;">पहले छात्र और अंक भरें।</div>';
+      var nbp=document.getElementById('noticeboardPreview');
+      if(nbp) nbp.innerHTML='';
+    } else {
+      try{ buildPrintList(); }catch(err){ console.error('Print error:',err); }
+      try{ buildNoticeboardPreview(); }catch(err){ console.error('Noticeboard preview error:',err); }
+    }
+  }
+}
+
+function startClass(){
+  try{
+    var kEl=document.getElementById('kk');
+    var k=kEl?kEl.value:'';
+    if(!k){ alert('कृपया कक्षा भरें!'); return; }
+    var s1El=document.getElementById('s1');
+    var s2El=document.getElementById('s2');
+    var s1=(s1El?s1El.value:'')||'25';
+    var s2=(s2El?s2El.value:'')||'26';
+
+    // ⚠️ पहले check करो — same कक्षा+सत्र पहले से exist करती है?
+    var existIdx=-1;
+    for(var i=0;i<saved.length;i++){
+      if(saved[i]&&saved[i].kk===k&&saved[i].s1===s1&&saved[i].s2===s2){
+        existIdx=i; break;
+      }
+    }
+    if(existIdx>=0){
+      // पुरानी class open करो — नई मत बनाओ
+      if(confirm('कक्षा '+k+' (20'+s1+'-20'+s2+') पहले से मौजूद है!\n\n"OK" — उसी class में जाएं\n"Cancel" — नई अलग class बनाएं')){
+        openCls(existIdx);
+        return;
+      }
+    }
+
+    cls={ s1:s1, s2:s2, kk:k, students:[], marks:{} };
+    activeIdx=saved.length;
+    saved.push({});
+    var id='S'+Date.now();
+    cls.students=[{id:id,name:'',father:'',mother:'',ank:'',dob:'',dobWords:'',dobEnglish:'',jati:'',varg:'',shala:'',upas:'',aadhar:'',mobile:'',apaar:'',dakhil:'',dakhilDate:'',namankaN:'',photo:''}];
+    cls.marks[id]={};
+    SUBJ.forEach(function(s,i){ cls.marks[id][i]={i1:'',i2:'',i3:'',i4:'',i5:'',i6:'',ts:'',tp:'',as:'',ap:'',vs:'',vp:'',ps:'',pp:''}; });
+    save();
+    var ci=document.getElementById('clsInfo');
+    if(ci) ci.textContent='कक्षा '+cls.kk+' | सत्र 20'+cls.s1+'-20'+cls.s2;
+    buildStudentForms();
+    document.querySelectorAll('.page').forEach(function(p){ p.classList.remove('on'); });
+    document.querySelectorAll('.tab').forEach(function(t){ t.classList.remove('on'); });
+    var pg=document.getElementById('page-student');
+    if(pg) pg.classList.add('on');
+    var tb=document.getElementById('tb-student');
+    if(tb) tb.classList.add('on');
+    window.scrollTo(0,0);
+  }catch(err){
+    alert('Error: '+err.message);
+  }
+}
+
+function mkId(){ return 'S'+Date.now(); }
+
+// जन्म तिथि को हिंदी शब्दों में बदलें
+function dobToWords(dob){
+  if(!dob) return '';
+  var months=['','जनवरी','फरवरी','मार्च','अप्रैल','मई','जून','जुलाई','अगस्त','सितम्बर','अक्टूबर','नवम्बर','दिसम्बर'];
+  // 1-99 के लिए सीधा map
+  var hn=['','एक','दो','तीन','चार','पाँच','छः','सात','आठ','नौ','दस',
+    'ग्यारह','बारह','तेरह','चौदह','पंद्रह','सोलह','सत्रह','अठारह','उन्नीस','बीस',
+    'इक्कीस','बाईस','तेईस','चौबीस','पच्चीस','छब्बीस','सत्ताईस','अट्ठाईस','उनतीस','तीस',
+    'इकतीस','बत्तीस','तैंतीस','चौंतीस','पैंतीस','छत्तीस','सैंतीस','अड़तीस','उनतालीस','चालीस',
+    'इकतालीस','बयालीस','तैंतालीस','चौंतालीस','पैंतालीस','छयालीस','सैंतालीस','अड़तालीस','उनचास','पचास',
+    'इक्यावन','बावन','तिरपन','चौवन','पचपन','छप्पन','सत्तावन','अट्ठावन','उनसठ','साठ',
+    'इकसठ','बासठ','तिरसठ','चौंसठ','पैंसठ','छियासठ','सड़सठ','अड़सठ','उनहत्तर','सत्तर',
+    'इकहत्तर','बहत्तर','तिहत्तर','चौहत्तर','पचहत्तर','छिहत्तर','सतहत्तर','अठहत्तर','उनासी','अस्सी',
+    'इक्यासी','बयासी','तिरासी','चौरासी','पचासी','छियासी','सत्तासी','अट्ठासी','नवासी','नब्बे',
+    'इक्यानवे','बानवे','तिरानवे','चौरानवे','पचानवे','छियानवे','सत्तानवे','अट्ठानवे','निन्यानवे'];
+  function numToHindi(n){
+    if(n<=0||n>9999) return '';
+    var res='';
+    var th=Math.floor(n/1000);
+    var h=Math.floor((n%1000)/100);
+    var rem=n%100;
+    if(th>0) res+=hn[th]+' हजार ';
+    if(h>0) res+=hn[h]+' सौ ';
+    if(rem>0) res+=hn[rem];
+    return res.trim();
+  }
+  // DD/MM/YYYY या YYYY-MM-DD support
+  var parts=dob.indexOf('/')>=0?dob.split('/'):dob.split('-');
+  var d,mo,y;
+  if(dob.indexOf('/')>=0){ d=parseInt(parts[0]); mo=parseInt(parts[1]); y=parseInt(parts[2]); }
+  else{ y=parseInt(parts[0]); mo=parseInt(parts[1]); d=parseInt(parts[2]); }
+  if(!d||!mo||!y||mo>12||d>31) return '';
+  return hn[d]+' '+months[mo]+' '+numToHindi(y);
+}
+
+function dobToEnglish(dob){
+  if(!dob) return '';
+  var months=['','January','February','March','April','May','June','July','August','September','October','November','December'];
+  var ones=['','One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten',
+    'Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','Eighteen','Nineteen'];
+  var tens=['','','Twenty','Thirty','Forty','Fifty','Sixty','Seventy','Eighty','Ninety'];
+  function numToEn(n){
+    if(n<=0||n>9999) return '';
+    var res='';
+    var th=Math.floor(n/1000);
+    var h=Math.floor((n%1000)/100);
+    var rem=n%100;
+    if(th>0) res+=ones[th]+' Thousand ';
+    if(h>0) res+=ones[h]+' Hundred ';
+    if(rem>0){
+      if(rem<20) res+=ones[rem];
+      else res+=tens[Math.floor(rem/10)]+(rem%10>0?' '+ones[rem%10]:'');
+    }
+    return res.trim();
+  }
+  var parts=dob.indexOf('/')>=0?dob.split('/'):dob.split('-');
+  var d,mo,y;
+  if(dob.indexOf('/')>=0){ d=parseInt(parts[0]); mo=parseInt(parts[1]); y=parseInt(parts[2]); }
+  else{ y=parseInt(parts[0]); mo=parseInt(parts[1]); d=parseInt(parts[2]); }
+  if(!d||!mo||!y||mo>12||d>31) return '';
+  return (numToEn(d)+' '+months[mo]+' '+numToEn(y)).toUpperCase();
+}
+
+function addStudent(){
+  var id=mkId();
+  cls.students.push({id:id,name:'',father:'',mother:'',ank:'',dob:'',dobWords:'',dobEnglish:'',jati:'',varg:'',shala:'',upas:'',aadhar:'',mobile:'',apaar:'',dakhil:'',dakhilDate:'',namankaN:'',photo:''});
+  cls.marks[id]={};
+  SUBJ.forEach(function(s,i){
+    cls.marks[id][i]={i1:'',i2:'',i3:'',i4:'',i5:'',i6:'',ts:'',tp:'',as:'',ap:'',vs:'',vp:'',ps:'',pp:''};
+  });
+  save();
+  buildStudentForms();
+}
+
+function removePhoto(sid){
+  var s=cls.students.find(function(x){ return x.id===sid; });
+  if(s){ s.photo=''; save(); }
+  buildStudentForms();
+}
+
+function delStudent(sid){
+  cls.students=cls.students.filter(function(s){ return s.id!==sid; });
+  delete cls.marks[sid];
+  save();
+  buildStudentForms();
+}
+
+function buildStudentForms(){
+  var el=document.getElementById('stdForms');
+  el.innerHTML='';
+  cls.students.forEach(function(st,idx){
+    var div=document.createElement('div');
+    div.style.cssText='background:#f5f6ff;border-radius:8px;padding:10px;margin-bottom:10px;border-left:4px solid #1a1a6e;';
+    
+    var hdr=document.createElement('div');
+    hdr.style.cssText='display:flex;align-items:center;gap:8px;margin-bottom:8px;';
+    var num=document.createElement('div');
+    num.style.cssText='width:26px;height:26px;background:#1a1a6e;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;';
+    num.textContent=idx+1;
+    hdr.appendChild(num);
+    var nm=document.createElement('b');
+    nm.id='nm_'+st.id;
+    nm.textContent=st.name||'नया छात्र';
+    nm.style.flex='1';
+    hdr.appendChild(nm);
+    if(cls.students.length>1){
+      var db=document.createElement('button');
+      db.className='btn br';
+      db.style.cssText='padding:3px 8px;font-size:11px;margin-top:0;';
+      db.textContent='✕';
+      db.onclick=(function(sid){ return function(){ delStudent(sid); }; })(st.id);
+      hdr.appendChild(db);
+    }
+    div.appendChild(hdr);
+    
+    var grid=document.createElement('div');
+    grid.style.cssText='display:grid;grid-template-columns:1fr 1fr;gap:6px;';
+    
+    [['name','नाम','text'],['father','पिता','text'],['mother','माता','text'],
+     ['ank','अनुक्रमांक','text'],['dob','जन्म तिथि (DD/MM/YYYY)','text'],['dobEnglish','जन्म तिथि (शब्दों में)','text'],
+     ['jati','जाति','text'],['varg','जाति वर्ग','text'],
+     ['apaar','अपार आई.डी.क्र.','text'],['namankaN','पेन नं.','text'],
+     ['dakhil','दाखिल क्र.','text'],['dakhilDate','दाखिल दिनांक','text'],
+     ['shala','शाला दिवस','number'],['upas','उपस्थिति','number'],
+     ['aadhar','आधार नं.','text'],['mobile','मोबाईल','text']
+    ].forEach(function(f){
+      var fd=document.createElement('div');
+      var lb=document.createElement('label');
+      lb.textContent=f[1];
+      var ip=document.createElement('input');
+      ip.type=f[2]; ip.value=st[f[0]]||''; ip.placeholder=f[1];
+      // DOB auto-fill शब्दों में
+      if(f[0]==='dob'){
+        ip.oninput=(function(sid,el2){ return function(){
+          var s=cls.students.find(function(x){ return x.id===sid; });
+          if(s){ s['dob']=el2.value; s['dobEnglish']=dobToEnglish(el2.value); save(); }
+          // dobEnglish field update
+          var weEl=document.getElementById('doben_'+sid);
+          if(weEl) weEl.value=dobToEnglish(el2.value);
+        }; })(st.id,ip);
+      } else if(f[0]==='name'||f[0]==='father'||f[0]==='mother'||f[0]==='jati'||f[0]==='varg'){
+        ip.oninput=(function(sid,fn,el2){ return function(){
+          // Auto UPPERCASE
+          var pos=el2.selectionStart;
+          el2.value=el2.value.toUpperCase();
+          try{ el2.setSelectionRange(pos,pos); }catch(e){}
+          var s=cls.students.find(function(x){ return x.id===sid; });
+          if(s){ s[fn]=el2.value; save(); }
+          if(fn==='name'){ var n=document.getElementById('nm_'+sid); if(n) n.textContent=el2.value||'नया छात्र'; }
+        }; })(st.id,f[0],ip);
+      } else {
+        ip.oninput=(function(sid,fn,el2){ return function(){
+          var s=cls.students.find(function(x){ return x.id===sid; });
+          if(s){ s[fn]=el2.value; save(); }
+          if(fn==='name'){ var n=document.getElementById('nm_'+sid); if(n) n.textContent=el2.value||'नया छात्र'; }
+        }; })(st.id,f[0],ip);
+      }
+      if(f[0]==='dobEnglish'){ ip.id='doben_'+st.id; ip.readOnly=true; ip.style.background='#f0f4ff'; ip.value=st.dobEnglish||dobToEnglish(st.dob||''); }
+      fd.appendChild(lb); fd.appendChild(ip);
+      grid.appendChild(fd);
+    });
+    div.appendChild(grid);
+    
+    // फोटो अपलोड section
+    var photoDiv=document.createElement('div');
+    photoDiv.style.cssText='margin-top:10px;display:flex;align-items:center;gap:10px;background:#f0f4ff;padding:8px;border-radius:6px;border:1.5px dashed #4a6fa5;';
+    var photoPreview=document.createElement('div');
+    photoPreview.id='photo_prev_'+st.id;
+    photoPreview.style.cssText='width:60px;height:72px;border:1px solid #aaa;border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#eee;flex-shrink:0;';
+    if(st.photo){
+      photoPreview.innerHTML='<img src="'+st.photo+'" style="width:100%;height:100%;object-fit:cover;"/>';
+    } else {
+      photoPreview.innerHTML='<div style="font-size:20px;color:#aaa;">👤</div>';
+    }
+    var photoInfo=document.createElement('div');
+    photoInfo.style.cssText='flex:1;';
+    photoInfo.innerHTML='<div style="font-size:11px;font-weight:700;color:#1a1a6e;margin-bottom:4px;">📷 छात्र फोटो</div>'
+      +'<div style="font-size:10px;color:#666;margin-bottom:6px;">पासपोर्ट साइज फोटो (प्रिंट में दिखेगी)</div>'
+      +'<label style="display:inline-block;padding:5px 12px;background:#4a6fa5;color:white;border-radius:5px;font-size:11px;font-weight:700;cursor:pointer;margin:0;">'
+      +'📁 फोटो चुनें<input type="file" accept="image/*" style="display:none;" id="photo_input_'+st.id+'"/>'
+      +'</label>'
+      +(st.photo?'<button onclick="removePhoto(\''+st.id+'\')" style="margin-left:6px;padding:5px 10px;background:#e53935;color:white;border:none;border-radius:5px;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit;">✕ हटाएं</button>':'');
+    photoDiv.appendChild(photoPreview);
+    photoDiv.appendChild(photoInfo);
+    div.appendChild(photoDiv);
+    
+    // Photo input handler
+    setTimeout(function(sid2){
+      var inp=document.getElementById('photo_input_'+sid2);
+      if(inp) inp.onchange=function(e){
+        var file=e.target.files[0];
+        if(!file) return;
+        var reader=new FileReader();
+        reader.onload=function(ev){
+          var s2=cls.students.find(function(x){ return x.id===sid2; });
+          if(s2){ s2.photo=ev.target.result; save(); }
+          var prev=document.getElementById('photo_prev_'+sid2);
+          if(prev) prev.innerHTML='<img src="'+ev.target.result+'" style="width:100%;height:100%;object-fit:cover;"/>';
+        };
+        reader.readAsDataURL(file);
+      };
+    },0,(function(x){ return x; })(st.id));
+    
+    el.appendChild(div);
+  });
+}
+
+// IKAI TABLE
+function buildIkaiTable(){
+  var tbl=document.getElementById('ikaiTbl');
+  var h='<thead><tr><th style="min-width:55px;text-align:left;padding-left:3px;">छात्र</th>';
+  SUBJ.forEach(function(s){
+    h+='<th colspan="6" style="background:#4a5fa8;color:white;">'+s+'</th>';
+  });
+  // पूर्णांक row
+  h+='</tr><tr><th style="background:#f0f3fb;color:#1a1a6e;font-size:10px;">पूर्णांक</th>';
+  SUBJ.forEach(function(){
+    for(var i=1;i<=6;i++) h+='<th style="background:#e8edf8;color:#1a1a6e;font-size:10px;">20</th>';
+  });
+  // इकाई नंबर row
+  h+='</tr><tr><th></th>';
+  SUBJ.forEach(function(){
+    for(var i=1;i<=6;i++) h+='<th style="background:#5c6bc0;color:white;min-width:34px;">'+i+'</th>';
+  });
+  h+='</tr></thead><tbody>';
+  cls.students.forEach(function(st,idx){
+    h+='<tr>';
+    h+='<td style="text-align:left;padding-left:3px;font-weight:700;">'+(idx+1)+'.'+( st.name||'—')+'</td>';
+    SUBJ.forEach(function(s,si){
+      var m=cls.marks[st.id]&&cls.marks[st.id][si]||{};
+      for(var i=1;i<=6;i++){
+        var k='i'+i; var v=m[k]||'';
+        var iAbs=(v==='ABS'); h+='<td><input type="text" value="'+v+'" placeholder="—" data-sid="'+st.id+'" data-si="'+si+'" data-k="'+k+'" oninput="updI(this)" style="width:34px;padding:3px;border:1px solid #ccc;border-radius:3px;text-align:center;font-size:11px;font-family:inherit;background:'+(iAbs?'#ffe0b2':'white')+';color:'+(iAbs?'#c62800':'')+';font-weight:'+(iAbs?'700':'400')+'"/></td>';
+      }
+    });
+    h+='</tr>';
+  });
+  h+='</tbody>';
+  tbl.innerHTML=h;
+}
+
+function buildPurakTable(){
+  var tbl=document.getElementById('purakTbl');
+  if(!tbl) return;
+  if(!cls.students||cls.students.length===0){
+    tbl.innerHTML='<tr><td style="padding:20px;color:#aaa;text-align:center;">पहले छात्र और वार्षिक अंक भरें।</td></tr>';
+    return;
+  }
+  // केवल पूरक/अनुत्तीर्ण छात्र दिखाएं — पर सभी छात्रों के लिए rows बनाएं
+  var h='<thead>';
+  h+='<tr><th colspan="'+(1+SUBJ.length*3)+'" style="background:#c0392b;color:white;font-size:13px;padding:6px;text-align:center;letter-spacing:1px;">📝 पूरक/अवसर परीक्षा अंक</th></tr>';
+  h+='<tr><th style="min-width:80px;text-align:left;padding-left:4px;font-size:12px;background:#fdecea;color:#222;">छात्र</th>';
+  SUBJ.forEach(function(s){
+    h+='<th colspan="3" style="background:#c0392b;color:white;font-size:11px;padding:4px;">'+s+'</th>';
+  });
+  h+='</tr>';
+  h+='<tr><th style="background:#fdecea;"></th>';
+  SUBJ.forEach(function(){
+    h+='<th style="background:#fdecea;color:#222;font-size:11px;font-weight:700;">सैं.<br/>(75)</th>';
+    h+='<th style="background:#fdecea;color:#222;font-size:11px;font-weight:700;">प्रा.<br/>(25)</th>';
+    h+='<th style="background:#fdecea;color:#222;font-size:11px;font-weight:700;">योग</th>';
+  });
+  h+='</tr></thead><tbody>';
+
+  cls.students.forEach(function(st,idx){
+    var r=calcR(st.id);
+    var isPurak=(r.res==='पूरक'||r.res==='अनुत्तीर्ण');
+    var rowBg=isPurak?'#fff8f0':'#f9f9f9';
+    var badge=isPurak?'<span style="font-size:9px;background:#c0392b;color:white;padding:1px 5px;border-radius:8px;margin-left:4px;">'+r.res+'</span>':'';
+    h+='<tr style="background:'+rowBg+';">';
+    h+='<td style="text-align:left;padding:3px 4px;font-weight:700;font-size:12px;">'+(idx+1)+'. '+(st.name||'—')+badge+'</td>';
+    SUBJ.forEach(function(s,si){
+      var m=cls.marks[st.id]&&cls.marks[st.id][si]||{};
+      var ps=m.ps||'', pp=m.pp||'';
+      var yv=(parseFloat(ps)||0)+(parseFloat(pp)||0);
+      var inputStyle='width:46px;font-size:12px;padding:4px;border:1.5px solid #e8a0a0;border-radius:4px;text-align:center;font-family:inherit;background:'+(isPurak?'white':'#f0f0f0')+';';
+      h+='<td style="padding:2px;text-align:center;">'
+        +'<input type="text" value="'+ps+'" placeholder="अंक" '
+        +'data-sid="'+st.id+'" data-si="'+si+'" data-k="ps" '
+        +'oninput="updPurak(this)" '
+        +(isPurak?'':'disabled ')
+        +'style="'+inputStyle+'"/>'
+        +'</td>';
+      h+='<td style="padding:2px;text-align:center;">'
+        +'<input type="text" value="'+pp+'" placeholder="अंक" '
+        +'data-sid="'+st.id+'" data-si="'+si+'" data-k="pp" '
+        +'oninput="updPurak(this)" '
+        +(isPurak?'':'disabled ')
+        +'style="'+inputStyle+'"/>'
+        +'</td>';
+      h+='<td style="font-weight:700;background:#ffe0d0;text-align:center;font-size:12px;border:1px solid #e0c0b0;">'+(yv>0?yv:'')+'</td>';
+    });
+    h+='</tr>';
+  });
+  h+='</tbody>';
+  tbl.innerHTML=h;
+}
+
+function updPurak(el){
+  var sid=el.getAttribute('data-sid');
+  var si=parseInt(el.getAttribute('data-si'));
+  var key=el.getAttribute('data-k');
+  var val=el.value;
+  if(!cls.marks[sid]) cls.marks[sid]={};
+  if(!cls.marks[sid][si]) cls.marks[sid][si]={i1:'',i2:'',i3:'',i4:'',i5:'',i6:'',ts:'',tp:'',as:'',ap:'',vs:'',vp:'',ps:'',pp:''};
+  cls.marks[sid][si][key]=val;
+  // योग cell update
+  var m=cls.marks[sid][si];
+  var yv=(parseFloat(m.ps||0)||0)+(parseFloat(m.pp||0)||0);
+  // find योग cell — 3rd cell in that subject block
+  var row=el.closest('tr');
+  if(row){
+    var cells=row.querySelectorAll('td');
+    // पहला td = नाम, फिर प्रत्येक विषय के 3 td (s,p,y)
+    // si वाले विषय की position: 1 + si*3
+    var yogIdx=1+si*3+2;
+    if(cells[yogIdx]) cells[yogIdx].textContent=yv>0?yv:'';
+  }
+  save();
+}
+
+function updIkai(sid,si,key,val){
+  if(!cls.marks[sid]) cls.marks[sid]={};
+  if(!cls.marks[sid][si]) cls.marks[sid][si]={i1:'',i2:'',i3:'',i4:'',i5:'',i6:'',ts:'',tp:'',as:'',ap:'',vs:'',vp:''};
+  cls.marks[sid][si][key]=val;
+  save();
+}
+
+// EXAM TABLE
+function buildExamTable(tblId,type,bg){
+  var tbl=document.getElementById(tblId);
+  var sf=type==='trai'?'ts':type==='ardh'?'as':'vs';
+  var pf=type==='trai'?'tp':type==='ardh'?'ap':'vp';
+  var bgLight=type==='trai'?'#e8ecf4':type==='ardh'?'#fdecea':'#e8f5e9';
+  var showLive=(type==='ardh'||type==='varsh');
+  var h='<thead>';
+  // Section title row
+  h+='<tr><th colspan="'+(1+SUBJ.length*3+(showLive?3:0))+'" style="background:'+bg+';color:white;font-size:13px;padding:6px;text-align:center;letter-spacing:1px;">';
+  h+=type==='trai'?'📋 त्रैमासिक परीक्षा':type==='ardh'?'📋 अर्धवार्षिक परीक्षा (30% अधिभार)':'📋 वार्षिक परीक्षा (70% अधिभार)';
+  h+='</th></tr>';
+  h+='<tr><th style="min-width:70px;text-align:left;padding-left:4px;font-size:12px;background:'+bgLight+';color:#222;">छात्र</th>';
+  SUBJ.forEach(function(s){ h+='<th colspan="3" style="background:'+bg+';color:white;font-size:12px;padding:4px;">'+s+'</th>'; });
+  if(showLive){
+    h+='<th colspan="3" style="background:#4a0d72;color:white;font-size:11px;padding:4px;">📊 Live अधिभार</th>';
+  }
+  h+='</tr><tr><th style="background:'+bgLight+';"></th>';
+  SUBJ.forEach(function(){
+    h+='<th style="background:'+bgLight+';color:#222;font-size:11px;font-weight:700;">सैं.<br/>(75)</th>';
+    h+='<th style="background:'+bgLight+';color:#222;font-size:11px;font-weight:700;">प्रा.<br/>(25)</th>';
+    h+='<th style="background:'+bgLight+';color:#222;font-size:11px;font-weight:700;">योग</th>';
+  });
+  if(showLive){
+    h+='<th style="background:#e1bee7;color:#4a0d72;font-size:10px;font-weight:700;">अर्ध<br/>30%</th>';
+    h+='<th style="background:#e1bee7;color:#4a0d72;font-size:10px;font-weight:700;">वार्ष<br/>70%</th>';
+    h+='<th style="background:#ede7f6;color:#4a148c;font-size:10px;font-weight:700;">महायोग</th>';
+  }
+  h+='</tr></thead><tbody>';
+  cls.students.forEach(function(st,idx){
+    h+='<tr>';
+    h+='<td style="text-align:left;padding-left:4px;font-weight:700;font-size:12px;">'+(idx+1)+'. '+(st.name||'—')+'</td>';
+    SUBJ.forEach(function(s,si){
+      var m=cls.marks[st.id]&&cls.marks[st.id][si]||{};
+      var sv=m[sf]||'', pv=m[pf]||'';
+      var sAbs=(sv==='ABS'), pAbs=(pv==='ABS');
+      var yv=(!sAbs&&!pAbs)?((parseFloat(sv)||0)+(parseFloat(pv)||0)):0;
+      var sBg=sAbs?'#ffe0b2':'white', pBg=pAbs?'#ffe0b2':'white';
+      var sC=sAbs?'#c62800':'', pC=pAbs?'#c62800':'';
+      var sFw=sAbs?'700':'400', pFw=pAbs?'700':'400';
+      h+='<td style="padding:2px;text-align:center;">'
+        +'<input type="text" value="'+sv+'" placeholder="अंक/ABS" '
+        +'data-sid="'+st.id+'" data-si="'+si+'" data-k="'+sf+'" data-t="'+type+'" '
+        +'oninput="updE(this)" '
+        +'style="width:46px;font-size:12px;padding:4px;border:1.5px solid #bbb;border-radius:4px;text-align:center;font-family:inherit;background:'+sBg+';color:'+sC+';font-weight:'+sFw+';"/>'
+        +'</td>';
+      h+='<td style="padding:2px;text-align:center;">'
+        +'<input type="text" value="'+pv+'" placeholder="अंक/ABS" '
+        +'data-sid="'+st.id+'" data-si="'+si+'" data-k="'+pf+'" data-t="'+type+'" '
+        +'oninput="updE(this)" '
+        +'style="width:46px;font-size:12px;padding:4px;border:1.5px solid #bbb;border-radius:4px;text-align:center;font-family:inherit;background:'+pBg+';color:'+pC+';font-weight:'+pFw+';"/>'
+        +'</td>';
+      h+='<td class="yog" id="y_'+type+'_'+st.id+'_'+si+'">'+(sAbs||pAbs?'ABS':yv>0?yv:'')+'</td>';
+    });
+    if(showLive){
+      // Live अधिभार cells - per student (show total across subjects)
+      var r2=calcR(st.id);
+      var totA30disp=r2.totA30||'';
+      var totV70disp=r2.totV70||'';
+      var totMdisp=r2.totF+(r2.tG>0?' (+'+r2.tG+'G)':'');
+      h+='<td id="live_tot_a30_'+st.id+'" style="font-weight:700;color:#4a0d72;background:#e1bee7;border:1px solid #4a0d72;text-align:center;font-size:12px;">'+totA30disp+'</td>';
+      h+='<td id="live_tot_v70_'+st.id+'" style="font-weight:700;color:#4a0d72;background:#e1bee7;border:1px solid #4a0d72;text-align:center;font-size:12px;">'+totV70disp+'</td>';
+      h+='<td id="live_tot_m_'+st.id+'" style="font-weight:900;color:#4a148c;background:#ede7f6;border:1px solid #4a148c;text-align:center;font-size:13px;">'+totMdisp+'</td>';
+    }
+    h+='</tr>';
+  });
+  h+='</tbody>';
+  tbl.innerHTML=h;
+}
+
+function updExam(sid,si,key,val,type){
+  if(!cls.marks[sid]) cls.marks[sid]={};
+  if(!cls.marks[sid][si]) cls.marks[sid][si]={i1:'',i2:'',i3:'',i4:'',i5:'',i6:'',ts:'',tp:'',as:'',ap:'',vs:'',vp:'',ps:'',pp:''};
+  cls.marks[sid][si][key]=val;
+  var sf=type==='trai'?'ts':type==='ardh'?'as':'vs';
+  var pf=type==='trai'?'tp':type==='ardh'?'ap':'vp';
+  var m=cls.marks[sid][si];
+  var sv=m[sf]||'', pv=m[pf]||'';
+  var sAbs=(sv==='ABS'), pAbs=(pv==='ABS');
+  var yv=(!sAbs&&!pAbs)?((parseFloat(sv)||0)+(parseFloat(pv)||0)):0;
+  var yEl=document.getElementById('y_'+type+'_'+sid+'_'+si);
+  if(yEl) yEl.textContent=(sAbs||pAbs)?'ABS':(yv>0?yv:'');
+  // Live mahayog update
+  updateLiveMahayog(sid, type);
+  save();
+}
+
+function updateLiveMahayog(sid, type){
+  // सिर्फ ardh और varsh type में अधिभार बदलता है
+  if(type!=='ardh' && type!=='varsh') return;
+  var r = calcR(sid);
+  // हर subject के लिए live cells update करो
+  SUBJ.forEach(function(s,si){
+    var sr = r.sr[si];
+    // अधिभार 30% cell
+    var a30El = document.getElementById('live_a30_'+sid+'_'+si);
+    if(a30El) a30El.textContent = sr.a30||'';
+    // अधिभार 70% cell
+    var v70El = document.getElementById('live_v70_'+sid+'_'+si);
+    if(v70El) v70El.textContent = sr.v70||'';
+    // महायोग cell
+    var mahaEl = document.getElementById('live_maha_'+sid+'_'+si);
+    if(mahaEl){
+      mahaEl.textContent = (sr.maha||0);
+    }
+  });
+  // कुल महायोग row
+  var totA30El = document.getElementById('live_tot_a30_'+sid);
+  if(totA30El) totA30El.textContent = r.totA30||'';
+  var totV70El = document.getElementById('live_tot_v70_'+sid);
+  if(totV70El) totV70El.textContent = r.totV70||'';
+  var totMEl = document.getElementById('live_tot_m_'+sid);
+  if(totMEl) totMEl.textContent = r.totF+(r.tG>0?' (+'+r.tG+'G)':'');
+}
+
+
+function calcR(sid){
+  var m=cls.marks[sid]||{};
+  var totA30=0,totV70=0,totTrai=0,totArdh=0,totVarsh=0;
+  var sr=[];
+  SUBJ.forEach(function(s,si){
+    var sm=m[si]||{};
+    var tsRaw=sm.ts||'', tpRaw=sm.tp||'';
+    var tsAbs=(tsRaw==='ABS'), tpAbs=(tpRaw==='ABS');
+    var ts=tsAbs?0:(parseFloat(tsRaw)||0), tp=tpAbs?0:(parseFloat(tpRaw)||0);
+    var asRaw=sm.as||'', apRaw=sm.ap||'';
+    var asAbs=(asRaw==='ABS'), apAbs=(apRaw==='ABS');
+    var as_=asAbs?0:(parseFloat(asRaw)||0), ap=apAbs?0:(parseFloat(apRaw)||0);
+    var vsRaw=sm.vs||'', vpRaw=sm.vp||'';
+    var vsAbs=(vsRaw==='ABS'), vpAbs=(vpRaw==='ABS');
+    var vs=vsAbs?0:(parseFloat(vsRaw)||0), vp=vpAbs?0:(parseFloat(vpRaw)||0);
+    // CGBSE: कोई एक भी ABS हो तो योग = 'ABS'
+    var traiOneAbs=tsAbs||tpAbs;
+    var ardhBothAbs=asAbs&&apAbs;
+    var ardhOneAbs=asAbs||apAbs;
+    var varshBothAbs=vsAbs&&vpAbs;
+    var varshOneAbs=vsAbs||vpAbs;
+    var ty=traiOneAbs?'ABS':(ts+tp);
+    var ay=ardhOneAbs?'ABS':(as_+ap);
+    var vy=varshOneAbs?'ABS':(vs+vp);
+    var isAbs=varshOneAbs;  // वार्षिक में ABS (result के लिए)
+    // अधिभार: ABS हो तो 'ABS' string, नहीं तो numeric
+    // परिशिष्ट-02 के अनुसार:
+    // H (अधिभार 30%) = अर्धवार्षिक योग (as_+ap) × 0.3
+    // N (अधिभार 70%) = वार्षिक योग (vs+vp) × 0.7
+    // O (कुल प्राप्तांक) = H + N
+    var ardhYog=as_+ap;
+    var varshYog=vs+vp;
+    var a30=ardhBothAbs?'ABS':(ardhOneAbs?'ABS':(ardhYog>0?Math.round(ardhYog*0.3*10)/10:0));
+    var v70=varshBothAbs?'ABS':(varshOneAbs?'ABS':(varshYog>0?Math.round(varshYog*0.7*10)/10:0));
+    var a30num=(a30==='ABS')?0:(a30||0);
+    var v70num=(v70==='ABS')?0:(v70||0);
+    // कुल प्राप्तांक (O) = H + N (परिशिष्ट-02)
+    // ⚠️ यहाँ Round नहीं करते — raw decimal रखते हैं ताकि कुल sum सही रहे
+    var mahaThRaw=a30num+v70num;
+    var mahaTh=Math.round(mahaThRaw); // सिर्फ display के लिए
+    var maha=mahaTh; // display value (rounded)
+    var mahaRaw=mahaThRaw; // sum के लिए raw (unrounded)
+    var hasData=(vs>0||vp>0)||isAbs;
+    // CGBSE: mahayog 100 me se, passing=33, grace max 10 per subject
+    var grace=0, graceT=0, graceP=0;
+    var hasVarshData=!isAbs && (vs>0||vp>0);
+    if(hasVarshData && maha<33){
+      var needG=33-maha;
+      if(needG<=10){ grace=needG; graceT=needG; }
+      else { grace=-1; }
+    }
+    var mahaG=(grace>0)?(maha+grace):maha;
+    totTrai+=(ty==='ABS'?0:ty); totArdh+=(ay==='ABS'?0:ay); totVarsh+=(vy==='ABS'?0:vy); totA30+=(a30==='ABS'?0:a30); totV70+=(v70==='ABS'?0:v70);
+    sr.push({ty:ty,ay:ay,vy:vy,a30:a30,v70:v70,a30num:a30num,v70num:v70num,mahaTh:mahaTh,mahaThRaw:mahaThRaw,mahaRaw:mahaRaw,maha:maha,mahaG:mahaG,grace:grace,graceT:graceT,graceP:graceP,vp:vp,vs:vs,isAbs:isAbs,tsRaw:tsRaw,tpRaw:tpRaw,vsRaw:vsRaw,vpRaw:vpRaw,asRaw:asRaw,apRaw:apRaw,traiOneAbs:traiOneAbs,ardhBothAbs:ardhBothAbs,ardhOneAbs:ardhOneAbs,varshBothAbs:varshBothAbs,varshOneAbs:varshOneAbs});
+  });
+  var totVp=sr.reduce(function(a,s){ return a+s.vp; },0);
+  // totM: display value (rounded maha) का sum — ताकि महायोग row = individual subject महायोग का जोड़ बराबर रहे
+  var totMraw=sr.reduce(function(a,s){ return a+(Number(s.maha)||0); },0);
+  var totM=totMraw; // already integers (rounded per subject)
+  // CGBSE नियम:
+  // 1) कोई विषय grace=-1 (10+ कम) → grace नहीं
+  // 2) grace वाले विषय > 3 → grace नहीं
+  // 3) कुल grace > 20 → grace नहीं
+  var gSubs=sr.filter(function(s){ return s.grace>0; });
+  var noG=sr.filter(function(s){ return s.grace===-1; });
+  var totalGraceNeeded=gSubs.reduce(function(a,s){ return a+s.grace; },0);
+  // CGBSE: max 3 विषयों में grace, कुल grace ≤ 20, कोई विषय grace=-1 नहीं
+  var gOk=(noG.length===0) && (gSubs.length<=3) && (totalGraceNeeded<=20);
+  var tG=gOk?totalGraceNeeded:0;
+  // बोर्ड नियम: ग्रेस अंक सिर्फ विषय को पास करने के लिए है, महायोग (कुल) में ग्रेस जोड़ा नहीं जाता
+  var totF=totMraw;
+  var pct=totF>0?(totF/600*100).toFixed(1):'';
+  var pN=parseFloat(pct)||0;
+  // श्रेणी: fail विषय count के बाद decide होगी (नीचे res के साथ set होगी)
+  var shrRaw=pN>=60?'प्रथम श्रेणी':pN>=45?'द्वितीय श्रेणी':pN>=33?'तृतीय श्रेणी':'';
+  // fail विषय: grace मिलने के बाद effective महायोग < 33 हो तो fail
+  // केवल वे विषय count करो जिनमें वार्षिक अंक भरे हैं (ABS या actual marks)
+  var vFail=sr.filter(function(s){
+    if(s.isAbs) return true;           // ABS → fail
+    if(s.vsRaw===''&&s.vpRaw==='') return false;  // अंक नहीं भरे → skip
+    var effM=gOk?s.mahaG:s.maha;
+    return effM<33;
+  }).length;
+  // totVarsh: जिन विषयों में अंक भरे हैं उनका वार्षिक योग
+  var hasVarshEntry=sr.some(function(s){ return s.isAbs||(s.vsRaw!==''||s.vpRaw!==''); });
+  var res='—';
+  if(hasVarshEntry){
+    if(vFail===0) res=tG>0&&gOk?'उत्तीर्ण (GRACE)':'उत्तीर्ण';
+    else if(vFail<=2) res='पूरक';
+    else res='अनुत्तीर्ण';
+  }
+  // श्रेणी: केवल उत्तीर्ण छात्र को मिलती है
+  var shr=(res==='उत्तीर्ण'||res==='उत्तीर्ण (GRACE)')?shrRaw:'';
+  var traiPct=totTrai>0?(totTrai/600*100).toFixed(1):'';
+  var traiShr=parseFloat(traiPct)>=60?'प्रथम':parseFloat(traiPct)>=45?'द्वितीय':parseFloat(traiPct)>=33?'तृतीय':'';
+  // त्रैमासिक: subject-wise fail check (सैं<25 या प्रा<8 या ABS)
+  var traiSubFail=SUBJ.some(function(s,si){ var sm2=m[si]||{}; if(sm2.ts==='ABS'||sm2.tp==='ABS') return true; var ts2=parseFloat(sm2.ts)||0,tp2=parseFloat(sm2.tp)||0; return (ts2>0&&ts2<25)||(tp2>0&&tp2<8); });
+  var traiRes=totTrai>0?((parseFloat(traiPct)>=33&&!traiSubFail)?'उत्तीर्ण':'अनुत्तीर्ण'):'';
+  var ardhPct=totArdh>0?(totArdh/600*100).toFixed(1):'';
+  var ardhShr=parseFloat(ardhPct)>=60?'प्रथम':parseFloat(ardhPct)>=45?'द्वितीय':parseFloat(ardhPct)>=33?'तृतीय':'';
+  // अर्धवार्षिक: subject-wise fail check (सैं<25 या प्रा<8 या ABS)
+  var ardhSubFail=SUBJ.some(function(s,si){ var sm2=m[si]||{}; if(sm2.as==='ABS'||sm2.ap==='ABS') return true; var as2=parseFloat(sm2.as)||0,ap2=parseFloat(sm2.ap)||0; return (as2>0&&as2<25)||(ap2>0&&ap2<8); });
+  var ardhRes=totArdh>0?((parseFloat(ardhPct)>=33&&!ardhSubFail)?'उत्तीर्ण':'अनुत्तीर्ण'):'';  return {sr:sr,totTrai:totTrai,totArdh:totArdh,totVarsh:totVarsh,
+    totA30:totA30,totV70:totV70,totVp:totVp,totM:totM,tG:tG,gOk:gOk,totF:totF,pct:pct,shr:shr,res:res,traiShr:traiShr,ardhShr:ardhShr,traiPct:traiPct,ardhPct:ardhPct,traiRes:traiRes,ardhRes:ardhRes};
+}
+
+function buildPreview(){
+  var el=document.getElementById('previewContent');
+  el.innerHTML='';
+  cls.students.forEach(function(st,idx){
+    var wrapper=document.createElement('div');
+    wrapper.style.cssText='margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.15);border-radius:6px;overflow:hidden;';
+    wrapper.innerHTML=buildPatrak(st,idx);
+    el.appendChild(wrapper);
+  });
+  setTimeout(generateQRs,300);
+}
+
+function buildDetailView(el){
+  cls.students.forEach(function(st,idx){
+    var r=calcR(st.id);
+    var m=cls.marks[st.id]||{};
+    var div=document.createElement('div');
+    div.style.cssText='background:white;border-radius:8px;padding:10px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.1);';
+    
+    var hdr='<div style="font-weight:700;font-size:13px;color:#1a1a6e;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid #eee;">'+(idx+1)+'. '+(st.name||'—')+' | अनुक्रमांक: '+(st.ank||'—')+'</div>';
+    
+    var tbl='<div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:10px;">';
+    tbl+='<thead><tr>';
+    tbl+='<th style="background:#1a1a6e;color:white;padding:4px 3px;border:1px solid #3949ab;text-align:left;min-width:70px;">विषय</th>';
+    tbl+='<th colspan="6" style="background:#e3e8f0;color:#1a1a6e;padding:4px 2px;border:1px solid #3949ab;">इकाई (1-6)</th>';
+    tbl+='<th colspan="3" style="background:#eceff1;color:#333;padding:4px 2px;border:1px solid #455a64;">त्रैमासिक</th>';
+    tbl+='<th colspan="3" style="background:#ffebee;color:#b71c1c;padding:4px 2px;border:1px solid #c62828;">अर्धवार्षिक</th>';
+    tbl+='<th colspan="3" style="background:#e8f5e9;color:#1b5e20;padding:4px 2px;border:1px solid #2e7d32;">वार्षिक</th>';
+    tbl+='<th colspan="4" style="background:#ede7f6;color:#4a148c;padding:4px 2px;border:1px solid #4a148c;">अधिभार</th>';
+    tbl+='</tr>';
+    tbl+='<tr>';
+    tbl+='<th style="background:#1a1a6e;color:white;border:1px solid #3949ab;padding:3px;"></th>';
+    for(var i=1;i<=6;i++) tbl+='<th style="background:#e3e8f0;color:#1a1a6e;border:1px solid #3949ab;padding:3px;">'+i+'</th>';
+    tbl+='<th style="background:#eceff1;color:#333;border:1px solid #455a64;padding:3px;">सैं.</th>';
+    tbl+='<th style="background:#eceff1;color:#333;border:1px solid #455a64;padding:3px;">प्रा.</th>';
+    tbl+='<th style="background:#eceff1;color:#333;border:1px solid #455a64;padding:3px;">योग</th>';
+    tbl+='<th style="background:#ffebee;color:#b71c1c;border:1px solid #c62828;padding:3px;">सैं.</th>';
+    tbl+='<th style="background:#ffebee;color:#b71c1c;border:1px solid #c62828;padding:3px;">प्रा.</th>';
+    tbl+='<th style="background:#ffebee;color:#b71c1c;border:1px solid #c62828;padding:3px;">योग</th>';
+    tbl+='<th style="background:#e8f5e9;color:#1b5e20;border:1px solid #2e7d32;padding:3px;">सैं.</th>';
+    tbl+='<th style="background:#e8f5e9;color:#1b5e20;border:1px solid #2e7d32;padding:3px;">प्रा.</th>';
+    tbl+='<th style="background:#e8f5e9;color:#1b5e20;border:1px solid #2e7d32;padding:3px;">योग</th>';
+    tbl+='<th style="background:#f3e5f5;color:#6a1b9a;border:1px solid #6a1b9a;padding:3px;">30%</th>';
+    tbl+='<th style="background:#f3e5f5;color:#6a1b9a;border:1px solid #6a1b9a;padding:3px;">70%</th>';
+    tbl+='<th style="background:#ede7f6;color:#4a148c;border:1px solid #4a148c;padding:3px;">महायोग</th>';
+    tbl+='<th style="background:#ede7f6;color:#4a148c;border:1px solid #4a148c;padding:3px;">विशेष</th>';
+    tbl+='</tr></thead><tbody>';
+    
+    SUBJ.forEach(function(s,si){
+      var sm=m[si]||{};
+      var sr=r.sr[si];
+      var hG=sr.grace>0&&r.gOk;
+      var bg=si%2===0?'white':'#f8f8ff';
+      tbl+='<tr>';
+      tbl+='<td style="text-align:left;padding-left:3px;font-weight:700;font-size:12px;background:'+bg+';border:1px solid #ddd;">'+s+'</td>';
+      for(var i=1;i<=6;i++) tbl+='<td style="background:'+bg+';border:1px solid #ddd;padding:2px;">'+(sm['i'+i]||'')+'</td>';
+      tbl+='<td style="background:#f5f5f5;border:1px solid #ddd;padding:2px;">'+(sm.ts||'')+'</td>';
+      tbl+='<td style="background:#f5f5f5;border:1px solid #ddd;padding:2px;">'+(sm.tp||'')+'</td>';
+      tbl+='<td style="font-weight:700;color:'+(sr.ty==='ABS'?'#c62828':'#283593')+';background:'+(sr.ty==='ABS'?'#ffe0b2':'#eaecf8')+';border:1px solid #ddd;padding:2px;">'+(sr.ty===0?'':(sr.ty||''))+'</td>';
+      tbl+='<td style="background:#fff5f5;border:1px solid #ddd;padding:2px;">'+(sm.as||'')+'</td>';
+      tbl+='<td style="background:#fff5f5;border:1px solid #ddd;padding:2px;">'+(sm.ap||'')+'</td>';
+      tbl+='<td style="font-weight:700;color:'+(sr.ay==='ABS'?'#c62828':'#c62828')+';background:'+(sr.ay==='ABS'?'#ffe0b2':'#fce8e8')+';border:1px solid #ddd;padding:2px;">'+(sr.ay===0?'':(sr.ay||''))+'</td>';
+      tbl+='<td style="background:#f5fff5;border:1px solid #ddd;padding:2px;">'+(sm.vs||'')+'</td>';
+      tbl+='<td style="background:#f5fff5;border:1px solid #ddd;padding:2px;">'+(sm.vp||'')+'</td>';
+      tbl+='<td style="font-weight:700;color:'+(sr.vy==='ABS'?'#c62828':'#2e7d32')+';background:'+(sr.vy==='ABS'?'#ffe0b2':'#e8f5e9')+';border:1px solid #ddd;padding:2px;">'+(sr.vy===0?'':(sr.vy||''))+'</td>';
+      tbl+='<td style="font-weight:700;color:'+(sr.a30==='ABS'?'#c62800':'#6a1b9a')+';background:'+(sr.a30==='ABS'?'#ffe0b2':'#f3e5f5')+';border:1px solid #ddd;padding:2px;">'+(sr.a30||'')+'</td>';
+      tbl+='<td style="font-weight:700;color:'+(sr.v70==='ABS'?'#c62800':'#6a1b9a')+';background:'+(sr.v70==='ABS'?'#ffe0b2':'#f3e5f5')+';border:1px solid #ddd;padding:2px;">'+(sr.v70||'')+'</td>';
+      tbl+='<td style="font-weight:700;color:#4a148c;background:#ede7f6;border:1px solid #ddd;padding:2px;">'+(sr.maha||'')+'</td>';
+      tbl+='<td style="font-size:9px;'+(hG?'color:#e65100;background:#fff3e0;':'')+'border:1px solid #ddd;padding:2px;">'+(hG?('GRACE +'+sr.grace):'')+'</td>';
+      tbl+='</tr>';
+    });
+    
+    // Total row
+    tbl+='<tr style="background:#e8eaf6;font-weight:700;font-size:10px;">';
+    tbl+='<td colspan="7" style="text-align:left;padding-left:3px;border:1px solid #ddd;">महायोग</td>';
+    tbl+='<td colspan="2" style="border:1px solid #ddd;">—</td><td style="color:#283593;border:1px solid #ddd;">'+r.totTrai+'</td>';
+    tbl+='<td colspan="2" style="background:#fce8e8;border:1px solid #ddd;">—</td><td style="background:#fce8e8;border:1px solid #ddd;">'+r.totArdh+'</td>';
+    tbl+='<td colspan="2" style="background:#e8f5e9;border:1px solid #ddd;">—</td><td style="background:#e8f5e9;border:1px solid #ddd;">'+r.totVarsh+'</td>';
+    tbl+='<td style="color:#6a1b9a;background:#f3e5f5;border:1px solid #ddd;">'+r.totA30+'</td>';
+    tbl+='<td style="color:#6a1b9a;background:#f3e5f5;border:1px solid #ddd;">'+r.totV70+'</td>';
+    tbl+='<td style="color:#4a148c;background:#ede7f6;border:1px solid #ddd;">'+r.totM+(r.tG>0?'<br><span style="font-size:8px;color:#e65100;">+'+r.tG+'G</span>':'')+'</td>';
+    tbl+='<td style="border:1px solid #ddd;"></td></tr>';
+    
+    // Result row
+    var rc=r.res.includes('उत्तीर्ण')?'#2e7d32':r.res==='पूरक'?'#f57c00':'#c62828';
+    tbl+='<tr style="background:#e8eaf6;color:#1a1a6e;font-weight:700;font-size:10px;border-top:2px solid #333;">';
+    tbl+='<td colspan="7" style="background:#e8eaf6;color:#1a1a6e;border:1px solid #aaa;font-weight:700;">परीक्षाफल</td>';
+    tbl+='<td colspan="3" style="background:#455a64;border:1px solid #455a64;text-align:center;">उत्तीर्ण</td>';
+    tbl+='<td colspan="3" style="background:#ffebee;color:#b71c1c;border:1px solid #aaa;text-align:center;">उत्तीर्ण</td>';
+    tbl+='<td colspan="3" style="background:'+rc+';border:1px solid '+rc+';text-align:center;">'+r.res+'</td>';
+    tbl+='<td colspan="4" style="background:#4a148c;border:1px solid #4a148c;text-align:center;">'+r.res+(r.pct?' | '+r.pct+'%':'')+' | '+r.shr+'</td>';
+    tbl+='</tr>';
+    
+    tbl+='</tbody></table></div>';
+    
+    div.innerHTML=hdr+tbl;
+    el.appendChild(div);
+  });
+}
+
+function buildSummaryView(el){
+  var pass=cls.students.filter(function(st){ var r=calcR(st.id); return r.res.includes('उत्तीर्ण'); }).length;
+  var purak=cls.students.filter(function(st){ return calcR(st.id).res==='पूरक'; }).length;
+  var fail=cls.students.filter(function(st){ return calcR(st.id).res==='अनुत्तीर्ण'; }).length;
+  var pratham=cls.students.filter(function(st){ var r=calcR(st.id); return r.res.includes('उत्तीर्ण')&&r.shr==='प्रथम श्रेणी'; }).length;
+  var dvitiy=cls.students.filter(function(st){ var r=calcR(st.id); return r.res.includes('उत्तीर्ण')&&r.shr==='द्वितीय श्रेणी'; }).length;
+  var tritiy=cls.students.filter(function(st){ var r=calcR(st.id); return r.res.includes('उत्तीर्ण')&&r.shr==='तृतीय श्रेणी'; }).length;
+  var passP=cls.students.length>0?Math.round(pass/cls.students.length*100):0;
+  
+  var html='<div style="background:white;border-radius:8px;padding:10px;margin-bottom:10px;box-shadow:0 1px 4px rgba(0,0,0,.1);">';
+  html+='<div style="font-size:12px;font-weight:700;color:#1a1a6e;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid #eee;">📊 कक्षा '+cls.kk+' — सत्र 20'+cls.s1+'-20'+cls.s2+' | परीक्षाफल सारांश</div>';
+  html+='<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px;margin-bottom:8px;">';
+  html+='<div style="background:#eef2ff;border-radius:7px;padding:8px;text-align:center;border-top:3px solid #1a1a6e;"><div style="font-size:9px;color:#666;">कुल छात्र</div><div style="font-size:22px;font-weight:700;color:#1a1a6e;">'+cls.students.length+'</div></div>';
+  html+='<div style="background:#f0fdf4;border-radius:7px;padding:8px;text-align:center;border-top:3px solid #15803d;"><div style="font-size:9px;color:#666;">उत्तीर्ण</div><div style="font-size:22px;font-weight:700;color:#15803d;">'+pass+'</div><div style="font-size:9px;color:#15803d;">'+passP+'%</div></div>';
+  html+='<div style="background:#fff7ed;border-radius:7px;padding:8px;text-align:center;border-top:3px solid #f57c00;"><div style="font-size:9px;color:#666;">पूरक</div><div style="font-size:22px;font-weight:700;color:#f57c00;">'+purak+'</div></div>';
+  html+='<div style="background:#fff5f5;border-radius:7px;padding:8px;text-align:center;border-top:3px solid #c62828;"><div style="font-size:9px;color:#666;">अनुत्तीर्ण</div><div style="font-size:22px;font-weight:700;color:#c62828;">'+fail+'</div></div>';
+  html+='</div>';
+  // श्रेणी breakdown
+  html+='<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:4px;">';
+  html+='<div style="background:#e8f5e9;border-radius:6px;padding:6px;text-align:center;"><div style="font-size:9px;color:#555;">प्रथम श्रेणी<br>(60%+)</div><div style="font-size:18px;font-weight:700;color:#1b5e20;">'+pratham+'</div></div>';
+  html+='<div style="background:#e3f2fd;border-radius:6px;padding:6px;text-align:center;"><div style="font-size:9px;color:#555;">द्वितीय श्रेणी<br>(45-59%)</div><div style="font-size:18px;font-weight:700;color:#0d47a1;">'+dvitiy+'</div></div>';
+  html+='<div style="background:#fce4ec;border-radius:6px;padding:6px;text-align:center;"><div style="font-size:9px;color:#555;">तृतीय श्रेणी<br>(33-44%)</div><div style="font-size:18px;font-weight:700;color:#880e4f;">'+tritiy+'</div></div>';
+  html+='</div>';
+  html+='</div>';
+  
+  // Rank sort karo
+  var rankedSt=cls.students.map(function(st){ var r=calcR(st.id); return {st:st,r:r,f:parseFloat(r.totF)||0}; });
+  rankedSt.sort(function(a,b){ return b.f-a.f; });
+  rankedSt.forEach(function(obj,i){
+    var st=obj.st; var r=obj.r;
+    var rc=r.res==='उत्तीर्ण'?'#15803d':r.res==='उत्तीर्ण (GRACE)'?'#e65100':r.res==='पूरक'?'#f57c00':'#e53935';
+    var medal=i===0?' 🥇':i===1?' 🥈':i===2?' 🥉':'';
+    html+='<div style="background:white;border-radius:8px;padding:10px;margin-bottom:8px;border-left:4px solid '+rc+';box-shadow:0 1px 3px rgba(0,0,0,.1);">';
+    html+='<div style="display:flex;align-items:center;gap:8px;">';
+    html+='<div style="width:26px;height:26px;background:#1a1a6e;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;">'+(i+1)+'</div>';
+    html+='<div style="flex:1;"><div style="font-weight:700;">'+(st.name||'—')+medal+'</div><div style="font-size:10px;color:#888;">अनुक्रमांक: '+(st.ank||'—')+'</div></div>';
+    html+='<div style="text-align:right;"><div style="font-weight:700;color:'+rc+';">'+r.res+'</div><div style="font-size:10px;color:#666;">'+(r.pct?r.pct+'%':'')+' '+r.shr+'</div></div></div>';
+    html+='<div style="display:flex;gap:4px;margin-top:6px;flex-wrap:wrap;font-size:10px;">';
+    html+='<span style="background:#e8eaf6;padding:2px 6px;border-radius:4px;">त्रैमा: <b>'+r.totTrai+'</b></span>';
+    html+='<span style="background:#ffe8e8;padding:2px 6px;border-radius:4px;">अर्ध: <b>'+r.totArdh+'</b></span>';
+    html+='<span style="background:#e8f5e9;padding:2px 6px;border-radius:4px;">वार्ष: <b>'+r.totVarsh+'</b></span>';
+    html+='<span style="background:#ede7f6;padding:2px 6px;border-radius:4px;">महायोग: <b style="color:#4a148c;">'+r.totF+'</b></span>';
+    if(r.tG>0) html+='<span style="background:#fff3e0;padding:2px 6px;border-radius:4px;color:#e65100;">GRACE:+'+r.tG+'</span>';
+    html+='</div></div>';
+  });
+  el.innerHTML=html||'<div style="color:#aaa;text-align:center;padding:20px;">पहले अंक भरें</div>';
+}
+
+function buildPrintList(){
+  var el=document.getElementById('printList');
+  var html='';
+  cls.students.forEach(function(st,i){
+    var r=calcR(st.id);
+    var rc=r.res==='उत्तीर्ण'?'#15803d':r.res==='उत्तीर्ण (GRACE)'?'#e65100':r.res==='पूरक'?'#f57c00':'#e53935';
+    html+='<div style="display:flex;align-items:center;gap:8px;padding:7px 10px;background:'+(i%2===0?'#f5f6ff':'white')+';border-radius:6px;margin-bottom:5px;border-left:4px solid '+rc+';">';
+    html+='<div style="flex:1;"><b>'+(i+1)+'. '+(st.name||'—')+'</b> <span style="color:'+rc+';font-size:11px;font-weight:700;">'+r.res+'</span></div>';
+    html+='<button onclick="printOne('+i+')" style="background:#1a1a6e;color:white;border:none;border-radius:5px;padding:4px 10px;font-size:11px;cursor:pointer;">🖨️ Print</button>';
+    html+='</div>';
+  });
+  el.innerHTML=html||'<div style="color:#aaa;text-align:center;padding:10px;">कोई छात्र नहीं</div>';
+}
+
+// A4 at 96dpi: 794x1123px
+// Portrait:  availW = 794 - 2*30 = 734px,  availH = 1123 - 2*23 = 1077px
+// Landscape: availW = 1123 - 2*23 = 1077px, availH = 794  - 2*30 = 734px
+function applyScaleFit(area, isL){
+  var availW = isL ? 1077 : 734;
+  var availH = isL ? 734  : 1077;
+  Array.prototype.forEach.call(area.querySelectorAll('.patrak-page'), function(pg){
+    pg.style.transform = 'none';
+    pg.style.width     = availW + 'px';
+    pg.style.maxWidth  = availW + 'px';
+    pg.style.overflow  = 'hidden';
+    pg.style.boxSizing = 'border-box';
+    void pg.offsetHeight;
+    var h = pg.scrollHeight;
+    if(h > availH){
+      var scale = availH / h;
+      pg.style.transformOrigin = 'top left';
+      pg.style.transform       = 'scale(' + scale.toFixed(4) + ')';
+      pg.style.marginBottom    = Math.round(h * scale - h) + 'px';
+    } else {
+      pg.style.transform    = 'none';
+      pg.style.marginBottom = '0';
+    }
+  });
+}
+
+function setPrintCSS(isL, styleId){
+  var old = document.getElementById(styleId);
+  if(old) old.remove();
+  var st   = document.createElement('style');
+  st.id    = styleId;
+  var marg = isL ? '6mm 6mm 6mm 6mm' : '6mm 8mm 6mm 8mm';
+  st.innerHTML =
+    '@page{size:A4 '+(isL?'landscape':'portrait')+';margin:'+marg+';}'
+    +'@media print{'
+    +'*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;color-adjust:exact!important;box-sizing:border-box!important;}'
+    +'.nav,.tabs,.page,.no-print,.nav-btn,.card,.btn,.info{display:none!important;}'
+    +'body{background:white!important;margin:0!important;padding:0!important;}'
+    +'#printArea{display:block!important;width:100%!important;padding:0!important;margin:0!important;}'
+    +'#printArea > .print-page{page-break-after:always;break-after:page;overflow:hidden!important;width:100%!important;padding:0!important;margin:0!important;}'
+    +'#printArea > .print-page:last-child{page-break-after:auto;break-after:auto;}'
+    +'.patrak-page{transform-origin:top left;width:100%!important;max-width:100%!important;overflow:hidden!important;box-sizing:border-box!important;}'
+    +'}';
+  document.head.appendChild(st);
+}
+
+function doPrint(htmlList, isL){
+  setPrintCSS(isL, 'dynPrintStyle');
+  var area = document.getElementById('printArea');
+  area.style.display = 'block';
+  // landscape के लिए area की width पहले से set करो
+  area.style.width = (isL ? 1077 : 734) + 'px';
+  var wrapper = '';
+  htmlList.forEach(function(h){
+    wrapper += '<div class="print-page"><div class="patrak-page">'+h+'</div></div>';
+  });
+  area.innerHTML = wrapper;
+  // QR → पहला reflow → scale → दूसरा reflow → print
+  generateQRs();
+  setTimeout(function(){
+    applyScaleFit(area, isL);
+    setTimeout(function(){
+      applyScaleFit(area, isL); // double-check after images/fonts settle
+      setTimeout(function(){
+        window.print();
+        area.style.display = 'none';
+        area.style.width   = '';
+      }, 400);
+    }, 600);
+  }, 600);
+}
+
+function printAll(orient){
+  orient=orient||'portrait';
+  var isL=orient==='landscape';
+  var list=cls.students.map(function(st2,i){ return buildPatrak(st2,i); });
+  doPrint(list, isL);
+}
+
+function printOne(idx,orient){
+  orient=orient||'portrait';
+  var isL=orient==='landscape';
+  doPrint([buildPatrak(cls.students[idx],idx)], isL);
+}
+
+function buildPatrak(st,idx){
+  var r=calcR(st.id);
+  var m=cls.marks[st.id]||{};
+  var resC=r.res==='उत्तीर्ण'?'#2e7d32':r.res==='उत्तीर्ण (GRACE)'?'#e65100':r.res==='पूरक'?'#f57c00':'#e53935';
+  
+  // पूरक/अवसर परीक्षा - fail विषय दिखाएं, entered data के साथ
+  var purakRows='';
+  var failSubjs=[];
+  if(r.res==='पूरक'||r.res==='अनुत्तीर्ण'){
+    SUBJ.forEach(function(s,si){
+      var sr=r.sr[si];
+      var isFail=sr.isAbs||(!sr.vs&&!sr.vp?false:(r.gOk?sr.mahaG:sr.maha)<33);
+      if(isFail) failSubjs.push({name:s,si:si});
+    });
+    failSubjs.forEach(function(f,ri){
+      var sm2=m[f.si]||{};
+      var ps=sm2.ps||'', pp=sm2.pp||'';
+      var pyog=(parseFloat(ps)||0)+(parseFloat(pp)||0);
+      var pres=pyog>=33?'<span style="color:#2e7d32;font-weight:900;">उत्तीर्ण</span>':'<span style="color:#c62828;font-weight:900;">'+(pyog>0?'अनुत्तीर्ण':'—')+'</span>';
+      purakRows+='<tr style="height:16px;background:'+(ri%2===0?'#fff8f0':'#fff3e8')+'">'
+        +'<td style="padding:1px 6px;font-weight:700;color:#c62828;font-size:11px;">'+(ri+1)+'. '+f.name+'</td>'
+        +'<td style="text-align:center;font-size:11px;font-weight:700;color:#111;">100</td>'
+        +'<td style="text-align:center;font-size:11px;font-weight:700;color:#333;">'+ps+'</td>'
+        +'<td style="text-align:center;font-size:11px;font-weight:700;color:#333;">'+pp+'</td>'
+        +'<td style="text-align:center;font-size:11px;font-weight:900;color:'+(pyog>0?'#1a1a6e':'#aaa')+'">'+(pyog>0?pyog:'')+'</td>'
+        +'<td style="text-align:center;font-size:10px;">'+pres+'</td></tr>';
+    });
+    for(var ei=failSubjs.length;ei<SUBJ.length;ei++){
+      purakRows+='<tr style="height:16px;background:'+(ei%2===0?'white':'#f8f9ff')+'">'
+        +'<td style="padding:1px 6px;font-size:11px;color:#333;font-weight:600;">'+(ei+1)+'.</td>'
+        +'<td></td><td></td><td></td><td></td><td></td></tr>';
+    }
+  } else {
+    for(var ei=0;ei<SUBJ.length;ei++){
+      purakRows+='<tr style="height:16px;background:'+(ei%2===0?'white':'#f8f9ff')+'">'
+        +'<td style="padding:1px 6px;font-size:11px;color:#333;font-weight:600;">'+(ei+1)+'.</td>'
+        +'<td></td><td></td><td></td><td></td><td></td></tr>';
+    }
+  }
+
+  var mkRows='';
+  SUBJ.forEach(function(s,si){
+    var sm=m[si]||{};
+    var sr=r.sr[si];
+    var hG=sr.grace>0&&r.gOk;
+    var bg=si%2===0?'white':'#f5f5ff';
+    var mBg=hG?'background:#fff3e0;color:#e65100;':'background:#ede7f6;color:#4a148c;';
+    mkRows+='<tr>';
+    mkRows+='<td style="text-align:left;padding:1px 3px;font-weight:700;font-size:12px;background:'+bg+';border:1px solid #dde;min-width:62px;width:62px;white-space:normal;overflow:hidden;word-break:break-word;">'+(si+1)+'. '+(s==='सामा.विज्ञान'?'सामा.<br/>विज्ञान':s)+'</td>';
+    var tsAbs=(sr.tsRaw==='ABS'), tpAbs=(sr.tpRaw==='ABS');
+    mkRows+='<td style="background:'+(tsAbs?'#ffe0b2':'#dde4f2')+';border:1.5px solid #2c3f5a;padding:1px;font-size:13px;text-align:center;color:'+(tsAbs?'#c62800':'')+';">'+(sr.tsRaw||'')+'</td>';
+    mkRows+='<td style="background:'+(tpAbs?'#ffe0b2':'#dde4f2')+';border:1.5px solid #2c3f5a;padding:1px;font-size:13px;text-align:center;color:'+(tpAbs?'#c62800':'')+';">'+(sr.tpRaw||'')+'</td>';
+    mkRows+='<td style="font-weight:700;color:'+(sr.ty==='ABS'?'#c62800':'#1a2a5a')+';background:'+(sr.ty==='ABS'?'#ffe0b2':'#b8c8e8')+';border:1.5px solid #2c3f5a;padding:1px;font-size:13px;text-align:center;">'+(sr.ty===0?'':(sr.ty||''))+'</td>';
+    var asAbs=(sm.as==='ABS'), apAbs=(sm.ap==='ABS');
+    mkRows+='<td style="background:'+(asAbs?'#ffe0b2':'#fde8e6')+';border:1.5px solid #922b21;padding:1px;font-size:13px;text-align:center;color:'+(asAbs?'#c62800':'')+';">'+(sm.as||'')+'</td>';
+    mkRows+='<td style="background:'+(apAbs?'#ffe0b2':'#fde8e6')+';border:1.5px solid #922b21;padding:1px;font-size:13px;text-align:center;color:'+(apAbs?'#c62800':'')+';">'+(sm.ap||'')+'</td>';
+    mkRows+='<td style="font-weight:700;color:'+(sr.ay==='ABS'?'#c62800':'#7b1a12')+';background:'+(sr.ay==='ABS'?'#ffe0b2':'#f5b8b2')+';border:1.5px solid #922b21;padding:1px;font-size:13px;text-align:center;">'+(sr.ay===0?'':(sr.ay||''))+'</td>';
+    var vsBg=sr.isAbs?'#ffe0b2':'#c8ecd4', vsC=sr.isAbs?'#c62800':'';
+    mkRows+='<td style="background:'+vsBg+';border:1.5px solid #1a4a28;padding:1px;font-size:13px;text-align:center;color:'+vsC+';font-weight:'+(sr.isAbs?'700':'400')+';">'+(sr.vsRaw||'')+'</td>';
+    mkRows+='<td style="background:'+vsBg+';border:1.5px solid #1a4a28;padding:1px;font-size:13px;text-align:center;color:'+vsC+';font-weight:'+(sr.isAbs?'700':'400')+';">'+(sr.vpRaw||'')+'</td>';
+    mkRows+='<td style="font-weight:700;color:'+(sr.vy==='ABS'?'#c62800':'#1a4a28')+';background:'+(sr.vy==='ABS'?'#ffe0b2':'#8fd4a8')+';border:1.5px solid #1a4a28;padding:1px;font-size:13px;text-align:center;">'+(sr.vy===0?'':(sr.vy||''))+'</td>';
+    var a30c=sr.a30==='ABS'?'#c62800':'#4a0d72', v70c=sr.v70==='ABS'?'#c62800':'#4a0d72';
+    var a30bg=sr.a30==='ABS'?'#ffe0b2':'#ddb8f0', v70bg=sr.v70==='ABS'?'#ffe0b2':'#ddb8f0';
+    mkRows+='<td style="font-weight:700;color:'+a30c+';background:'+a30bg+';border:1.5px solid #4a0d72;padding:1px;font-size:13px;text-align:center;">'+(sr.a30||'')+'</td>';
+    mkRows+='<td style="font-weight:700;color:'+v70c+';background:'+v70bg+';border:1.5px solid #4a0d72;padding:1px;font-size:13px;text-align:center;">'+(sr.v70||'')+'</td>';
+    // महायोग cell — केवल वास्तविक अंक (grace यहाँ नहीं जोड़ते, विशेष कॉलम में दिखेगी)
+    mkRows+='<td style="font-weight:700;font-size:10px;text-align:center;vertical-align:middle;border:2px solid #1a0038;background:#ede7f6;color:#4a148c;line-height:1.4;padding:2px;min-width:60px;width:60px;">'
+      +'<span style="font-size:10px;display:block;color:#7b1fa2;">'+sr.a30num+'+'+sr.v70num+'</span>'
+      +'<span style="font-size:15px;font-weight:900;">'+(sr.maha||0)+'</span>'
+      +'</td>';
+    // विशेष column
+    mkRows+='<td style="font-size:10px;font-weight:900;text-align:center;vertical-align:middle;border:2px solid #1a0038;background:'+(sr.grace>0&&r.gOk?'#fff3e0':'white')+';color:#e65100;padding:2px;min-width:38px;width:38px;">'
+      +(sr.grace>0&&r.gOk?('GRACE<br>+'+sr.grace):'')
+      +'</td>';
+    mkRows+='</tr>';
+  });
+  
+  var totRow='<tr style="background:#e8eaf6;font-weight:700;font-size:13px;">';
+  totRow+='<td style="text-align:left;padding-left:3px;border:1px solid #ccc;font-size:13px;">महायोग</td>';
+  totRow+='<td colspan="2" style="border:1px solid #ccc;text-align:center;">—</td>';
+  totRow+='<td style="color:#1a2a5a;background:#b8c8e8;border:1.5px solid #2c3f5a;text-align:center;font-size:13px;">'+r.totTrai+'</td>';
+  totRow+='<td colspan="2" style="background:#fde8e6;border:1.5px solid #922b21;text-align:center;">—</td>';
+  totRow+='<td style="color:#7b1a12;background:#f5b8b2;border:1.5px solid #922b21;text-align:center;font-size:13px;">'+r.totArdh+'</td>';
+  totRow+='<td colspan="2" style="background:#c8ecd4;border:1.5px solid #1a4a28;text-align:center;">—</td>';
+  totRow+='<td style="color:#1a4a28;background:#8fd4a8;border:1.5px solid #1a4a28;text-align:center;font-size:13px;">'+r.totVarsh+'</td>';
+  totRow+='<td style="background:#ddb8f0;color:#4a0d72;border:1.5px solid #4a0d72;text-align:center;font-size:13px;">'+(Math.round(r.totA30*10)/10)+'</td>';
+  totRow+='<td style="background:#ddb8f0;color:#4a0d72;border:1.5px solid #4a0d72;text-align:center;font-size:13px;">'+(Math.round(r.totV70*10)/10)+'</td>';
+  totRow+='<td style="background:#c9a0e8;color:#2d0752;border:2.5px solid #1a0038;text-align:center;font-size:15px;font-weight:900;line-height:1.2;padding:1px;">'
+    +r.totF
+    +'</td>';
+  totRow+='<td style="background:#f3e5f5;border:2.5px solid #1a0038;text-align:center;padding:1px;"></td>';
+  totRow+='</tr>';
+  
+  var resExtra='';
+  if(r.res==='उत्तीर्ण'||r.res==='उत्तीर्ण (GRACE)'){
+    resExtra=r.pct+'% | '+r.shr;
+  } else {
+    resExtra='—';
+  }
+  var resRow='<tr style="color:white;font-weight:700;font-size:11px;border-top:2px solid #1a1a6e;">';
+  resRow+='<td style="background:#1a1a6e;color:white;text-align:center;padding:3px;font-size:12px;font-weight:900;letter-spacing:0.5px;">परीक्षाफल</td>';
+  resRow+='<td colspan="3" style="background:#455a64;color:white;text-align:center;font-size:14px;font-weight:900;padding:1px;line-height:1.2;">'+(r.totTrai>0?(r.traiRes+(r.traiRes==='उत्तीर्ण'&&r.traiShr?'<br/><span style="font-size:12px;font-weight:700;">'+r.traiShr+'</span>':'')+(r.traiRes==='उत्तीर्ण'&&r.traiPct?'<br/><span style="font-size:14px;font-weight:900;background:rgba(0,0,0,0.25);padding:0px 6px;border-radius:4px;display:inline-block;">'+r.traiPct+'%</span>':'')):'—')+'</td>';
+  resRow+='<td colspan="3" style="background:#c62828;color:white;text-align:center;font-size:14px;font-weight:900;padding:1px;line-height:1.2;">'+(r.totArdh>0?(r.ardhRes+(r.ardhRes==='उत्तीर्ण'&&r.ardhShr?'<br/><span style="font-size:12px;font-weight:700;">'+r.ardhShr+'</span>':'')+(r.ardhRes==='उत्तीर्ण'&&r.ardhPct?'<br/><span style="font-size:14px;font-weight:900;background:rgba(0,0,0,0.25);padding:0px 6px;border-radius:4px;display:inline-block;">'+r.ardhPct+'%</span>':'')):'—')+'</td>';
+  resRow+='<td colspan="7" style="background:'+resC+';color:white;border:2.5px solid #1a0038;text-align:center;font-size:14px;font-weight:900;padding:1px;line-height:1.2;letter-spacing:0.5px;">'+r.res+(r.res==='उत्तीर्ण'||r.res==='उत्तीर्ण (GRACE)'?'<br/><span style="font-size:12px;font-weight:700;">'+r.shr+'</span><br/><span style="font-size:14px;font-weight:900;color:#ffffff;background:rgba(0,0,0,0.25);padding:0px 6px;border-radius:4px;display:inline-block;">'+r.pct+'%</span>':'')+'</td>';
+  resRow+='</tr>';
+  
+  var col1=[],col2=[];
+  NIYAM.forEach(function(n,i){ if(i<4) col1.push((i+1)+'. '+n); else col2.push((i+1)+'. '+n); });
+  var niyamHtml='<div style="display:flex;gap:6px;overflow:hidden;">'
+    +'<div style="flex:1;font-size:7.8px;color:#333;line-height:1.25;overflow:hidden;">'+col1.join('<br/>')+'</div>'
+    +'<div style="flex:1;font-size:7.8px;color:#333;line-height:1.25;overflow:hidden;">'+col2.join('<br/>')+'</div>'
+    +'</div>';
+  
+  return '<div style="font-family:\'Noto Sans Devanagari\',sans-serif;font-size:11px;background:white;padding:1.5mm 2.5mm;width:100%;max-width:100%;box-sizing:border-box;display:flex;flex-direction:column;gap:1px;overflow:hidden;position:relative;">'
+    // WATERMARK - content के ऊपर mix-blend-mode:multiply से (ताकि रंगीन table cells के ऊपर से भी दिखे, बिना नंबर छुपाए)
+    +'<div style="position:absolute;inset:0;z-index:50;overflow:hidden;pointer-events:none;display:flex;flex-wrap:wrap;align-content:center;justify-content:center;transform:rotate(-18deg) scale(1.3);opacity:0.22;mix-blend-mode:multiply;">'
+    +'<span style="font-size:32px;font-weight:900;color:#1a1a6e;white-space:nowrap;text-align:center;line-height:1.6;">शासकीय हाई स्कूल मोढ़े<br/>UDISE 22072510903 ★ संस्था कोड 311242</span>'
+    +'</div>'
+    +'<div style="position:relative;z-index:1;display:flex;flex-direction:column;gap:1px;">'
+    // HEADER - position:relative ताकि QR absolute top-right में रहे
+    +'<div style="position:relative;border-bottom:2px solid #1a1a6e;padding-bottom:2px;margin-bottom:2px;padding-right:70px;">'
+    // QR - ऊपर दाहिने कोने में absolute position
+    +'<div style="position:absolute;top:50%;right:0;transform:translateY(-50%);display:flex;flex-direction:column;align-items:center;gap:1px;">'
+    +'<div id="qr_'+st.id+'_'+idx+'" style="width:58px;height:58px;"></div>'
+    +'<div style="font-size:6px;color:#555;font-weight:600;text-align:center;">📱 Scan करें</div>'
+    +'</div>'
+    // Logo + Title एक साथ
+    +'<div style="display:flex;align-items:center;gap:6px;">'
+    +'<img src="'+SARA+'" style="width:62px;height:62px;object-fit:contain;flex-shrink:0;border-radius:50%;border:2px solid #1a1a6e;"/>'
+    +'<div style="flex:1;text-align:center;">'
+    +'<div style="font-size:12px;color:#222;font-weight:600;letter-spacing:0.5px;">✦ छत्तीसगढ़ शासन – शिक्षा विभाग ✦</div>'
+    +'<div style="font-size:21px;font-weight:bold;color:#1a1a6e;white-space:nowrap;letter-spacing:0.5px;">शासकीय हाई स्कूल मोढ़े</div>'
+    +'<div style="font-size:13px;color:#222;font-weight:600;">विकास खण्ड – तखतपुर | जिला – बिलासपुर (छ.ग.)</div>'
+    +'<div style="font-size:12px;color:#111;font-weight:700;">UDISE: 22072510903 | संस्था कोड: 311242</div>'
+    +'<div style="font-size:12px;color:#333;font-weight:700;font-style:italic;">॥ सा विद्या या विमुक्तये ॥</div>'
+    +'<div style="font-size:15px;font-weight:bold;color:#c62828;margin:0;">★ प्रगति – पत्रक ★</div>'
+    +'<div style="font-size:13px;font-weight:700;color:#1a1a6e;">सत्र: 20'+cls.s1+' – 20'+cls.s2+' &nbsp;|&nbsp; कक्षा: '+cls.kk+'</div>'
+    +'</div>'
+    +'</div>'
+    +'</div>'
+    // STUDENT INFO - तीन equal columns
+    +'<div style="display:flex;gap:4px;margin-bottom:2px;align-items:stretch;">'
+    // बाईं column - 7 rows
+    +'<div style="flex:1;border:1.5px solid #1a1a6e;border-radius:3px;overflow:hidden;">'
+    +[['अनुक्रमांक',st.ank],['विद्यार्थी का नाम',st.name],['पिता का नाम',st.father],['माता का नाम',st.mother],['जन्म तिथि',st.dob],['जन्म तिथि<br/>(शब्दों में)',st.dobEnglish||dobToEnglish(st.dob||'')],['जाति',st.jati],['आधार',st.aadhar]].map(function(f){
+      return '<div style="display:flex;border-bottom:1px solid #d0d5ef;min-height:15px;">'
+        +'<div style="width:85px;flex-shrink:0;background:#eef2fb;padding:2px 4px;font-size:11px;font-weight:bold;color:#1a1a6e;border-right:1px solid #d0d5ef;">'+f[0]+'</div>'
+        +'<div style="flex:1;padding:2px 4px;font-size:11px;font-weight:600;">'+(f[1]||'')+'</div>'
+        +'</div>';
+    }).join('')
+    +'</div>'
+    // दाहिनी column - 4 rows (बाईं जितनी ऊंचाई)
+    +'<div style="flex:1;border:1.5px solid #1a1a6e;border-radius:3px;overflow:hidden;display:flex;flex-direction:column;">'
+    +[['जाति वर्ग',st.varg],['मोबाईल',st.mobile],['शाला दिवस',st.shala],['उपस्थिति',st.upas],['अपार आई.डी.क्र.',st.apaar||''],['पेन नं.',st.namankaN||''],['दाखिल क्र.',st.dakhil||''],['दाखिल दिनांक',st.dakhilDate||'']].map(function(f){
+      return '<div style="display:flex;border-bottom:1px solid #d0d5ef;min-height:15px;">'
+        +'<div style="width:75px;flex-shrink:0;background:#eef2fb;padding:2px 4px;font-size:11px;font-weight:bold;color:#1a1a6e;border-right:1px solid #d0d5ef;">'+f[0]+'</div>'
+        +'<div style="flex:1;padding:2px 4px;font-size:11px;font-weight:600;">'+(f[1]||'')+'</div>'
+        +'</div>';
+    }).join('')
+    +'</div>'
+    // फोटो column
+    +'<div style="width:28mm;border:1.5px solid #1a1a6e;border-radius:3px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">'
+    +(st.photo
+      ?'<img src="'+st.photo+'" style="width:24mm;height:32mm;object-fit:cover;border-radius:2px;"/>'
+      :'<div style="width:24mm;height:32mm;border:1px dashed #aaa;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:7px;color:#aaa;text-align:center;"><div style="font-size:18px;">👤</div>पासपोर्ट<br/>साइज फोटो</div>'
+    )+'</div>'
+    +'</div>'
+    // MARK SHEET - इकाई का अपना section, पूर्णांक अलग row में ऊपर
+    +'<div style="font-size:13px;font-weight:bold;color:#1a1a6e;text-align:center;margin:2px 0 1px;letter-spacing:1px;">— अंक सूची — MARK SHEET —</div>'
+    +'<table style="width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed;">'
+    +'<thead>'
+    // Row 1: Section headers — विषय rowspan=2, महायोग+विशेष rowspan=2
+    +'<tr>'
+    +'<th rowspan="2" style="background:#1a1a6e;color:white;text-align:center;padding:2px;min-width:62px;width:62px;border:1.5px solid #3949ab;font-size:11px;vertical-align:middle;white-space:normal;word-break:break-word;">विषय</th>'
+    +'<th colspan="3" style="background:#455a7a;color:white;border:2px solid #2c3f5a;font-size:12px;padding:2px;">त्रैमासिक</th>'
+    +'<th colspan="3" style="background:#c0392b;color:white;border:2px solid #922b21;font-size:12px;padding:2px;">अर्धवार्षिक<br/><span style="font-size:9px;font-weight:normal;opacity:0.93;">(अधिभार 30%)</span></th>'
+    +'<th colspan="3" style="background:#27693a;color:white;border:2px solid #1a4a28;font-size:12px;padding:2px;">वार्षिक<br/><span style="font-size:9px;font-weight:normal;opacity:0.93;">(अधिभार 70%)</span></th>'
+    +'<th colspan="2" style="background:#6a1b9a;color:white;border:2px solid #4a0d72;font-size:11px;padding:2px;">अधिभार</th>'
+    +'<th rowspan="2" style="background:#4a0d72;color:white;border:2.5px solid #1a0038;font-size:10px;padding:2px;font-weight:bold;vertical-align:middle;text-align:center;min-width:60px;width:60px;">महायोग</th>'
+    +'<th rowspan="2" style="background:#2d0752;color:white;border:2.5px solid #1a0038;font-size:10px;padding:2px;font-weight:bold;vertical-align:middle;text-align:center;min-width:38px;width:38px;">विशेष</th>'
+    +'</tr>'
+    // Row 2: sub-columns
+    +'<tr>'
+    +'<th style="background:#c8d0e8;color:#1a2a5a;border:1.5px solid #2c3f5a;font-size:12px;padding:1px;">सैं.<br/>(75)</th>'
+    +'<th style="background:#c8d0e8;color:#1a2a5a;border:1.5px solid #2c3f5a;font-size:12px;padding:1px;">प्रा.<br/>(25)</th>'
+    +'<th style="background:#c8d0e8;color:#1a2a5a;border:1.5px solid #2c3f5a;font-size:12px;padding:1px;">योग</th>'
+    +'<th style="background:#f5c6c2;color:#7b1a12;border:1.5px solid #922b21;font-size:12px;padding:1px;">सैं.<br/>(75)</th>'
+    +'<th style="background:#f5c6c2;color:#7b1a12;border:1.5px solid #922b21;font-size:12px;padding:1px;">प्रा.<br/>(25)</th>'
+    +'<th style="background:#f5c6c2;color:#7b1a12;border:1.5px solid #922b21;font-size:12px;padding:1px;">योग</th>'
+    +'<th style="background:#b2dfca;color:#1a4a28;border:1.5px solid #1a4a28;font-size:12px;padding:1px;">सैं.<br/>(75)</th>'
+    +'<th style="background:#b2dfca;color:#1a4a28;border:1.5px solid #1a4a28;font-size:12px;padding:1px;">प्रा.<br/>(25)</th>'
+    +'<th style="background:#b2dfca;color:#1a4a28;border:1.5px solid #1a4a28;font-size:12px;padding:1px;">योग</th>'
+    +'<th style="background:#e1bee7;color:#4a0d72;border:1.5px solid #4a0d72;font-size:12px;padding:1px;">अर्ध<br/>30%</th>'
+    +'<th style="background:#e1bee7;color:#4a0d72;border:1.5px solid #4a0d72;font-size:12px;padding:1px;">वार्ष<br/>70%</th>'
+    +'</tr>'
+    +'</thead>'
+    +'<tbody>'+mkRows+totRow+resRow+'</tbody>'
+    +'</table>'
+    // PURAK
+    +'<div style="margin-top:1px;">'
+    +'<div style="background:#f0f3fb;border:1.5px solid #1a1a6e;border-bottom:none;border-radius:3px 3px 0 0;padding:2px 6px;font-size:12px;font-weight:bold;color:#1a1a6e;">— पूरक/अवसर परीक्षा —</div>'
+    +'<table style="width:100%;border-collapse:collapse;font-size:12px;border:1.5px solid #1a1a6e;border-top:none;">'
+    +'<thead><tr style="background:#e3e8f0;color:#1a1a6e;font-size:12px;"><th style="text-align:left;padding:3px 5px;">विषय</th><th style="padding:3px;">पूर्णांक</th><th style="padding:3px;">सैद्धांतिक</th><th style="padding:3px;">प्रायोगिक</th><th style="padding:3px;">योग</th><th style="padding:3px;">परिणाम</th></tr></thead>'
+    +'<tbody>'+purakRows+'</tbody>'
+    +'</table></div>'
+    // SIGNATURES
+    +'<div style="margin-top:1px;border:1.2px solid #1a1a6e;border-radius:3px;overflow:hidden;">'
+    +'<div style="background:#1a1a6e;color:white;font-size:9px;font-weight:bold;padding:2px 6px;">हस्ताक्षर</div>'
+    +'<div style="display:flex;">'
+    +['कक्षा शिक्षक','परीक्षा प्रभारी','पालक','प्राचार्य'].map(function(l,i){
+      return '<div style="flex:1;'+(i<3?'border-right:1px solid #e0e4f0;':'')+' padding:2px 4px 2px;text-align:center;">'
+        +'<div style="border-top:1px solid #333;margin:0 auto 2px;width:88%;margin-top:22px;"></div>'
+        +'<div style="font-size:9px;font-weight:bold;color:#333;">'+l+'</div>'
+        +'<div style="font-size:8px;color:#999;">हस्ताक्षर एवं दिनांक</div>'
+        +'</div>';
+    }).join('')
+    +'</div></div>'
+    // NIYAM
+    +'<div style="margin-top:1px;border:1.2px solid #1a1a6e;border-radius:3px;overflow:hidden;">'
+    +'<div style="background:#1a1a6e;color:white;font-size:9px;font-weight:bold;padding:1px 6px;">— नियमावली —</div>'
+    +'<div style="padding:2px 3px;overflow:hidden;">'+niyamHtml+'</div>'
+    +'</div>'
+    +'</div>'
+    +'</div>';
+}
+
+function mergeDuplicates(){
+  // same kk+s1+s2 वाली सभी classes को एक में merge करो
+  var groups={};
+  saved.forEach(function(c,i){
+    if(!c||!c.kk) return;
+    var key=c.kk+'|'+c.s1+'|'+c.s2;
+    if(!groups[key]) groups[key]=[];
+    groups[key].push(i);
+  });
+  var hasDup=false;
+  Object.keys(groups).forEach(function(k){ if(groups[k].length>1) hasDup=true; });
+  if(!hasDup){ alert('कोई duplicate class नहीं है।'); return; }
+  if(!confirm('सभी duplicate classes को एक में merge करें?\n(सभी छात्रों का data एक class में आ जाएगा)')) return;
+
+  var newSaved=[];
+  Object.keys(groups).forEach(function(key){
+    var idxs=groups[key];
+    var base=JSON.parse(JSON.stringify(saved[idxs[0]]));
+    for(var j=1;j<idxs.length;j++){
+      var other=saved[idxs[j]];
+      if(!other||!other.students) return;
+      other.students.forEach(function(st){
+        // खाली नाम वाले skip करो
+        if(!st.name&&!st.ank) return;
+        base.students.push(st);
+        if(other.marks&&other.marks[st.id]){
+          base.marks[st.id]=other.marks[st.id];
+        }
+      });
+    }
+    newSaved.push(base);
+  });
+  saved=newSaved;
+  activeIdx=saved.length>0?0:-1;
+  if(activeIdx>=0) cls=JSON.parse(JSON.stringify(saved[0]));
+  idbSet(JSON.parse(JSON.stringify(saved)),function(ok){
+    if(!ok){ try{ localStorage.setItem('pp-v6',JSON.stringify(saved)); }catch(e){} }
+  });
+  showClasses();
+  alert('✅ Merge हो गया! अब Edit करके data check करें।');
+}
+
+function showClasses(){
+  var el=document.getElementById('classList');
+  if(!saved.length){ el.innerHTML='<div style="color:#aaa;text-align:center;padding:10px;">कोई डेटा नहीं</div>'; return; }
+
+  // duplicate detect करो
+  var keyCount={};
+  saved.forEach(function(c){ if(c&&c.kk){ var k=c.kk+'|'+c.s1+'|'+c.s2; keyCount[k]=(keyCount[k]||0)+1; } });
+  var hasDup=Object.keys(keyCount).some(function(k){ return keyCount[k]>1; });
+
+  var html='';
+  if(hasDup){
+    html+='<div style="background:#fff3cd;border:1px solid #ffc107;border-radius:6px;padding:8px 10px;margin-bottom:8px;font-size:12px;color:#856404;">'
+      +'⚠️ Duplicate classes मिलीं! सभी को एक में merge करें।<br>'
+      +'<button onclick="mergeDuplicates()" style="margin-top:6px;background:#e65100;color:white;border:none;border-radius:5px;padding:6px 14px;cursor:pointer;font-size:12px;font-weight:700;font-family:inherit;">🔀 Merge करें</button>'
+      +'</div>';
+  }
+
+  saved.forEach(function(c,i){
+    if(!c.kk) return;
+    html+='<div style="display:flex;align-items:center;gap:8px;padding:8px 10px;background:'+(i%2===0?'#f5f6ff':'white')+';border-radius:6px;margin-bottom:6px;border:1px solid #e0e4f0;">';
+    html+='<div style="flex:1;"><div style="font-weight:700;color:#1a1a6e;">कक्षा '+c.kk+' — 20'+c.s1+'-20'+c.s2+'</div>';
+    html+='<div style="font-size:11px;color:#666;">'+(c.students?c.students.length:0)+' छात्र</div></div>';
+    html+='<button onclick="openCls('+i+')" style="background:#1a1a6e;color:white;border:none;border-radius:5px;padding:5px 12px;cursor:pointer;font-size:11px;font-family:inherit;">✏️ Edit</button>';
+    html+='<button onclick="delCls('+i+')" style="background:#e53935;color:white;border:none;border-radius:5px;padding:5px 8px;cursor:pointer;font-size:11px;font-family:inherit;">🗑️</button>';
+    html+='</div>';
+  });
+  el.innerHTML=html||'<div style="color:#aaa;text-align:center;padding:10px;">कोई डेटा नहीं</div>';
+}
+
+function openCls(i){
+  cls=JSON.parse(JSON.stringify(saved[i]));
+  activeIdx=i;
+  document.getElementById('clsInfo').textContent='कक्षा '+cls.kk+' | सत्र 20'+cls.s1+'-20'+cls.s2;
+  buildStudentForms();
+  go('student');
+}
+
+function delCls(i){
+  if(!confirm('इस कक्षा का डेटा हटाएं?')) return;
+  saved.splice(i,1);
+  if(activeIdx===i) activeIdx=-1;
+  idbSet(JSON.parse(JSON.stringify(saved)),function(){});
+  showClasses();
+}
+
+function updI(el){
+  var sid=el.getAttribute('data-sid');
+  var si=parseInt(el.getAttribute('data-si'));
+  var k=el.getAttribute('data-k');
+  // ABS auto uppercase
+  var up=el.value.toUpperCase();
+  if(up==='ABS'){ el.value='ABS'; }
+  var isAbs=(el.value.toUpperCase()==='ABS');
+  el.style.background=isAbs?'#ffe0b2':'white';
+  el.style.color=isAbs?'#c62800':'';
+  el.style.fontWeight=isAbs?'700':'400';
+  updIkai(sid,si,k,isAbs?'ABS':el.value);
+}
+function updE(el){
+  var sid=el.getAttribute('data-sid');
+  var si=parseInt(el.getAttribute('data-si'));
+  var k=el.getAttribute('data-k');
+  var t=el.getAttribute('data-t');
+  // ABS auto uppercase
+  var v=el.value.toUpperCase();
+  if(v==='ABS'||v==='AB'||v==='A') el.value=v;
+  var isAbs=(el.value.toUpperCase()==='ABS');
+  el.style.background=isAbs?'#ffe0b2':'white';
+  el.style.color=isAbs?'#c62800':'';
+  el.style.fontWeight=isAbs?'700':'400';
+  updExam(sid,si,k,el.value.toUpperCase()==='ABS'?'ABS':el.value,t);
+}
+load();
+
+// Auto next box - text inputs (अंक या ABS भरने के बाद)
+document.addEventListener('input', function(e){
+  var el=e.target;
+  if(el.tagName!=='INPUT' || el.type!=='text') return;
+  // सिर्फ exam/ikai inputs (data-k attribute वाले)
+  if(!el.getAttribute('data-k')) return;
+  var val=el.value.toUpperCase();
+  var move=false;
+  if(val==='ABS'){
+    move=true;
+  } else if(/^\d+$/.test(el.value)){
+    // इकाई: max 2 digits (0-20), exam: max 2 digits (0-75/25)
+    // 2 digit भरते ही आगे जाओ
+    if(el.value.length>=2) move=true;
+  }
+  if(move){
+    var inputs=Array.from(document.querySelectorAll('input[type=text][data-k]'));
+    var idx=inputs.indexOf(el);
+    if(idx>=0 && idx<inputs.length-1){
+      inputs[idx+1].focus();
+      inputs[idx+1].select();
+    }
+  }
+});
+
+function generateQRs(){
+  document.querySelectorAll('[id^="qr_"]').forEach(function(div){
+    var parts=div.id.split('_');
+    var sid=parts.slice(1,-1).join('_');
+    if(!sid) sid=parts[1];
+    var st=cls.students.find(function(s){ return s.id===sid; })||{};
+    var r=calcR(sid);
+    var txt=(st.name||'')+' | '+cls.kk+' | Ank:'+(st.ank||'')+' | '+r.res+(r.pct?' '+r.pct+'%':'')+'| UDISE:22072510903';
+    makeQR(div, txt);
+  });
+}
+// ============================================================
+// 0. NOTICE BOARD PRINT
+// ============================================================
+function printNoticeboard(orient){
+  if(!cls.students||cls.students.length===0){ alert('पहले छात्र और अंक भरें!'); return; }
+  orient=orient||'portrait';
+  var isL=(orient==='landscape');
+
+  // Rank sort
+  var ranked=cls.students.map(function(st){ var r=calcR(st.id); return {st:st,r:r,f:parseFloat(r.totF)||0}; });
+  ranked.sort(function(a,b){ return b.f-a.f; });
+
+  var pass=ranked.filter(function(o){ return o.r.res.includes('उत्तीर्ण'); }).length;
+  var purak=ranked.filter(function(o){ return o.r.res==='पूरक'; }).length;
+  var fail=ranked.filter(function(o){ return o.r.res==='अनुत्तीर्ण'; }).length;
+  var passP=cls.students.length>0?Math.round(pass/cls.students.length*100):0;
+  var pratham=ranked.filter(function(o){ return o.r.res.includes('उत्तीर्ण')&&o.r.shr==='प्रथम श्रेणी'; }).length;
+  var dvitiy=ranked.filter(function(o){ return o.r.res.includes('उत्तीर्ण')&&o.r.shr==='द्वितीय श्रेणी'; }).length;
+  var tritiy=ranked.filter(function(o){ return o.r.res.includes('उत्तीर्ण')&&o.r.shr==='तृतीय श्रेणी'; }).length;
+
+  var w=window.open('','_blank');
+  var marg=isL?'6mm 6mm 6mm 6mm':'6mm 8mm 6mm 8mm';
+  var css='@page{size:A4 '+(isL?'landscape':'portrait')+';margin:'+marg+';}'
+    +'*{box-sizing:border-box;margin:0;padding:0;}'
+    +'body{font-family:"Noto Sans Devanagari",sans-serif;font-size:13px;background:white;color:#111;}'
+    +'.hdr{text-align:center;padding-bottom:6px;border-bottom:2.5px double #1a1a6e;margin-bottom:8px;}'
+    +'.school{font-size:'+(isL?'17':'19')+'px;font-weight:700;color:#1a1a6e;letter-spacing:.5px;}'
+    +'.sub{font-size:11px;color:#555;margin-top:2px;}'
+    +'.notice-title{font-size:'+(isL?'14':'15')+'px;font-weight:700;color:#7b1fa2;margin-top:5px;letter-spacing:1px;border:1.5px solid #7b1fa2;display:inline-block;padding:2px 16px;border-radius:4px;}'
+    +'.stats{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:8px;}'
+    +'.scard{border:1px solid #ccc;border-radius:4px;padding:3px 2px;text-align:center;}'
+    +'.slabel{font-size:9px;color:#666;}'
+    +'.sval{font-size:14px;font-weight:700;}'
+    +'table{width:100%;border-collapse:collapse;}'
+    +'thead tr{background:#1a1a6e;color:white;}'
+    +'th{padding:5px 3px;font-size:11px;border:1px solid #3949ab;text-align:center;}'
+    +'td{padding:4px 3px;border:1px solid #ccc;font-size:11px;text-align:center;}'
+    +'.pass-row{background:#f0fdf4;}'
+    +'.purak-row{background:#fff7ed;}'
+    +'.fail-row{background:#fff5f5;}'
+    +'.res-pass{color:#15803d;font-weight:700;}'
+    +'.res-purak{color:#f57c00;font-weight:700;}'
+    +'.res-fail{color:#c62828;font-weight:700;}'
+    +'.medal{font-size:13px;}'
+    +'.footer{margin-top:8px;display:flex;justify-content:space-between;font-size:8.5px;color:#888;border-top:1px solid #ccc;padding-top:5px;}'
+    +'.sign-row{display:flex;justify-content:space-between;margin-top:14px;}'
+    +'.sign-box{text-align:center;font-size:9px;color:#555;}'
+    +'.sign-line{border-top:1px solid #555;width:100px;margin:0 auto 3px;}'
+    +'@media print{body{-webkit-print-color-adjust:exact;print-color-adjust:exact;}}';
+
+  var rows='';
+  ranked.forEach(function(obj,i){
+    var st=obj.st; var r=obj.r;
+    var rowCls=r.res.includes('उत्तीर्ण')?'pass-row':r.res==='पूरक'?'purak-row':'fail-row';
+    var resCls=r.res.includes('उत्तीर्ण')?'res-pass':r.res==='पूरक'?'res-purak':'res-fail';
+    var medal=i===0?'🥇':i===1?'🥈':i===2?'🥉':'';
+    rows+='<tr class="'+rowCls+'">'
+      +'<td>'+(i+1)+(medal?'<span class="medal">'+medal+'</span>':'')+'</td>'
+      +'<td style="text-align:left;padding-left:5px;font-weight:'+(i<3?'700':'400')+';">'+(st.name||'—')+'</td>'
+      +'<td>'+(st.ank||'—')+'</td>'
+      +'<td>'+r.totTrai+'</td>'
+      +'<td>'+r.totArdh+'</td>'
+      +'<td>'+r.totVarsh+'</td>'
+      +'<td style="font-weight:700;color:#4a148c;">'+r.totF+(r.tG>0?'<sup style="font-size:7px;color:#e65100;">+'+r.tG+'G</sup>':'')+'</td>'
+      +'<td>'+(r.pct||'—')+'</td>'
+      +'<td>'+r.shr.replace('श्रेणी','श्र.')+'</td>'
+      +'<td class="'+resCls+'">'+r.res+'</td>'
+      +'</tr>';
+  });
+
+  var html='<!DOCTYPE html><html><head><meta charset="UTF-8"/>'
+    +'<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet"/>'
+    +'<style>'+css+'</style></head><body>'
+    +'<div class="hdr">'
+    +'<div class="school">शासकीय हाई स्कूल मोढ़े</div>'
+    +'<div class="sub">विकास खण्ड: तखतपुर | जिला: बिलासपुर (छ.ग.) | UDISE: 22072510903</div>'
+    +'<div style="margin-top:4px;"><span class="notice-title">परीक्षाफल सूची — कक्षा '+cls.kk+' | सत्र 20'+cls.s1+'-20'+cls.s2+'</span></div>'
+    +'</div>'
+    // Stats bar
+    +'<div class="stats">'
+    +'<div class="scard"><div class="slabel">कुल छात्र</div><div class="sval" style="color:#1a1a6e;">'+cls.students.length+'</div></div>'
+    +'<div class="scard"><div class="slabel">उत्तीर्ण</div><div class="sval" style="color:#15803d;">'+pass+'</div></div>'
+    +'<div class="scard"><div class="slabel">पूरक</div><div class="sval" style="color:#f57c00;">'+purak+'</div></div>'
+    +'<div class="scard"><div class="slabel">अनुत्तीर्ण</div><div class="sval" style="color:#c62828;">'+fail+'</div></div>'
+    +'<div class="scard"><div class="slabel">प्रथम श्र.</div><div class="sval" style="color:#1b5e20;">'+pratham+'</div></div>'
+    +'<div class="scard"><div class="slabel">द्वितीय श्र.</div><div class="sval" style="color:#0d47a1;">'+dvitiy+'</div></div>'
+    +'<div class="scard"><div class="slabel">उत्तीर्ण %</div><div class="sval" style="color:#6a1b9a;">'+passP+'%</div></div>'
+    +'</div>'
+    // Main table
+    +'<table>'
+    +'<thead><tr>'
+    +'<th style="width:5%;">क्र.</th>'
+    +'<th style="text-align:left;padding-left:5px;width:22%;">छात्र का नाम</th>'
+    +'<th style="width:8%;">अनुक्र.</th>'
+    +'<th style="width:7%;">त्रैमा.</th>'
+    +'<th style="width:7%;">अर्ध.</th>'
+    +'<th style="width:7%;">वार्ष.</th>'
+    +'<th style="width:8%;">महायोग</th>'
+    +'<th style="width:6%;">%</th>'
+    +'<th style="width:10%;">श्रेणी</th>'
+    +'<th style="width:12%;">परिणाम</th>'
+    +'</tr></thead>'
+    +'<tbody>'+rows+'</tbody>'
+    +'</table>'
+    // Signature row
+    +'<div class="sign-row">'
+    +'<div class="sign-box"><div class="sign-line"></div>कक्षा शिक्षक के हस्ताक्षर</div>'
+    +'<div class="sign-box"><div style="font-size:9px;color:#888;text-align:center;">मुद्रण दिनांक: '+new Date().toLocaleDateString('hi-IN')+'<br/>G — कृपांक (Grace)</div></div>'
+    +'<div class="sign-box"><div class="sign-line"></div>प्राचार्य के हस्ताक्षर</div>'
+    +'</div>'
+    +'<div class="footer">'
+    +'<span>UDISE: 22072510903 | संस्था कोड: 311242</span>'
+    +'<span>शासकीय हाई स्कूल मोढ़े, तखतपुर, बिलासपुर</span>'
+    +'<span>सत्र: 20'+cls.s1+'-20'+cls.s2+'</span>'
+    +'</div>'
+    +'<script>window.onload=function(){window.print();}<\/script>'
+    +'</body></html>';
+
+  w.document.write(html);
+  w.document.close();
+}
+
+// ============================================================
+// 0b. NOTICE BOARD IN-PAGE PREVIEW
+// ============================================================
+function buildNoticeboardPreview(){
+  var el=document.getElementById('noticeboardPreview');
+  if(!el) return;
+  if(!cls.students||cls.students.length===0){ el.innerHTML=''; return; }
+
+  var ranked=cls.students.map(function(st){ var r=calcR(st.id); return {st:st,r:r,f:parseFloat(r.totF)||0}; });
+  ranked.sort(function(a,b){ return b.f-a.f; });
+
+  var pass=ranked.filter(function(o){ return o.r.res.includes('उत्तीर्ण'); }).length;
+  var purak=ranked.filter(function(o){ return o.r.res==='पूरक'; }).length;
+  var fail=ranked.filter(function(o){ return o.r.res==='अनुत्तीर्ण'; }).length;
+  var passP=cls.students.length>0?Math.round(pass/cls.students.length*100):0;
+
+  var html='<div style="border:1.5px solid #ce93d8;border-radius:6px;overflow:hidden;margin-top:4px;">';
+  html+='<div style="background:#7b1fa2;color:white;padding:6px 10px;font-size:11px;font-weight:700;text-align:center;">👁️ नोटिस बोर्ड पूर्वावलोकन — '+cls.kk+' (20'+cls.s1+'-20'+cls.s2+')</div>';
+  // Stats
+  html+='<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:6px;background:#f9f0ff;">';
+  html+='<div style="text-align:center;"><div style="font-size:8px;color:#666;">कुल</div><div style="font-size:15px;font-weight:700;color:#1a1a6e;">'+cls.students.length+'</div></div>';
+  html+='<div style="text-align:center;"><div style="font-size:8px;color:#666;">उत्तीर्ण</div><div style="font-size:15px;font-weight:700;color:#15803d;">'+pass+'</div></div>';
+  html+='<div style="text-align:center;"><div style="font-size:8px;color:#666;">पूरक</div><div style="font-size:15px;font-weight:700;color:#f57c00;">'+purak+'</div></div>';
+  html+='<div style="text-align:center;"><div style="font-size:8px;color:#666;">उत्तीर्ण%</div><div style="font-size:15px;font-weight:700;color:#6a1b9a;">'+passP+'%</div></div>';
+  html+='</div>';
+  // Table
+  html+='<div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:10px;">';
+  html+='<thead><tr style="background:#1a1a6e;color:white;">';
+  html+='<th style="padding:4px 2px;border:1px solid #3949ab;">क्र.</th>';
+  html+='<th style="padding:4px 4px;border:1px solid #3949ab;text-align:left;">नाम</th>';
+  html+='<th style="padding:4px 2px;border:1px solid #3949ab;">अनुक्र.</th>';
+  html+='<th style="padding:4px 2px;border:1px solid #3949ab;">त्रैमा.</th>';
+  html+='<th style="padding:4px 2px;border:1px solid #3949ab;">अर्ध.</th>';
+  html+='<th style="padding:4px 2px;border:1px solid #3949ab;">वार्ष.</th>';
+  html+='<th style="padding:4px 2px;border:1px solid #3949ab;">महायोग</th>';
+  html+='<th style="padding:4px 2px;border:1px solid #3949ab;">%</th>';
+  html+='<th style="padding:4px 2px;border:1px solid #3949ab;">परिणाम</th>';
+  html+='</tr></thead><tbody>';
+  ranked.forEach(function(obj,i){
+    var st=obj.st; var r=obj.r;
+    var rowCls=r.res.includes('उत्तीर्ण')?'#f0fdf4':r.res==='पूरक'?'#fff7ed':'#fff5f5';
+    var tc=r.res.includes('उत्तीर्ण')?'#15803d':r.res==='पूरक'?'#f57c00':'#c62828';
+    var medal=i===0?'🥇':i===1?'🥈':i===2?'🥉':'';
+    html+='<tr style="background:'+rowCls+';">';
+    html+='<td style="border:1px solid #e0e0e0;padding:3px;text-align:center;font-weight:700;">'+(i+1)+(medal?medal:'')+'</td>';
+    html+='<td style="border:1px solid #e0e0e0;padding:3px 5px;text-align:left;font-weight:'+(i<3?'700':'400')+';max-width:90px;word-break:break-word;">'+(st.name||'—')+'</td>';
+    html+='<td style="border:1px solid #e0e0e0;padding:3px;text-align:center;">'+(st.ank||'—')+'</td>';
+    html+='<td style="border:1px solid #e0e0e0;padding:3px;text-align:center;">'+r.totTrai+'</td>';
+    html+='<td style="border:1px solid #e0e0e0;padding:3px;text-align:center;">'+r.totArdh+'</td>';
+    html+='<td style="border:1px solid #e0e0e0;padding:3px;text-align:center;">'+r.totVarsh+'</td>';
+    html+='<td style="border:1px solid #e0e0e0;padding:3px;text-align:center;font-weight:700;color:#4a148c;">'+r.totF+(r.tG>0?'<sup style="font-size:7px;color:#e65100;">G</sup>':'')+'</td>';
+    html+='<td style="border:1px solid #e0e0e0;padding:3px;text-align:center;">'+(r.pct||'—')+'</td>';
+    html+='<td style="border:1px solid #e0e0e0;padding:3px;text-align:center;font-weight:700;color:'+tc+';">'+r.res+'</td>';
+    html+='</tr>';
+  });
+  html+='</tbody></table></div></div>';
+  el.innerHTML=html;
+}
+function printSummary(){
+  if(!cls.students||cls.students.length===0){ alert('पहले छात्र और अंक भरें!'); return; }
+  var pass=cls.students.filter(function(st){ return calcR(st.id).res.includes('उत्तीर्ण'); }).length;
+  var purak=cls.students.filter(function(st){ return calcR(st.id).res==='पूरक'; }).length;
+  var fail=cls.students.filter(function(st){ return calcR(st.id).res==='अनुत्तीर्ण'; }).length;
+  var pratham=cls.students.filter(function(st){ var r=calcR(st.id); return r.res.includes('उत्तीर्ण')&&r.shr==='प्रथम श्रेणी'; }).length;
+  var dvitiy=cls.students.filter(function(st){ var r=calcR(st.id); return r.res.includes('उत्तीर्ण')&&r.shr==='द्वितीय श्रेणी'; }).length;
+  var tritiy=cls.students.filter(function(st){ var r=calcR(st.id); return r.res.includes('उत्तीर्ण')&&r.shr==='तृतीय श्रेणी'; }).length;
+  var passP=cls.students.length>0?Math.round(pass/cls.students.length*100):0;
+  // rank by totF
+  var ranked=cls.students.map(function(st){ var r=calcR(st.id); return {st:st,r:r}; });
+  ranked.sort(function(a,b){ return (parseFloat(b.r.totF)||0)-(parseFloat(a.r.totF)||0); });
+  var w=window.open('','_blank');
+  var html='<!DOCTYPE html><html><head><meta charset="UTF-8"/>'
+    +'<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet"/>'
+    +'<style>body{font-family:"Noto Sans Devanagari",sans-serif;font-size:12px;margin:10mm;}table{width:100%;border-collapse:collapse;}th{background:#1a1a6e;color:white;padding:5px 4px;font-size:11px;}td{padding:4px;border:1px solid #ccc;font-size:11px;text-align:center;}.hdr{text-align:center;margin-bottom:8px;}.cards{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:10px;}.card{border:1px solid #ccc;border-radius:4px;padding:4px;text-align:center;}.clabel{font-size:9px;color:#555;}.cval{font-size:16px;font-weight:700;}@media print{@page{size:A4;margin:8mm;}}</style>'
+    +'</head><body>';
+  html+='<div class="hdr"><div style="font-size:16px;font-weight:700;color:#1a1a6e;">शासकीय हाई स्कूल मोढ़े</div>';
+  html+='<div style="font-size:11px;color:#555;">परीक्षाफल सारांश — कक्षा '+cls.kk+' | सत्र 20'+cls.s1+'-20'+cls.s2+'</div></div>';
+  html+='<div class="cards">';
+  html+='<div class="card"><div class="clabel">कुल</div><div class="cval" style="color:#1a1a6e;">'+cls.students.length+'</div></div>';
+  html+='<div class="card"><div class="clabel">उत्तीर्ण</div><div class="cval" style="color:#15803d;">'+pass+'</div></div>';
+  html+='<div class="card"><div class="clabel">पूरक</div><div class="cval" style="color:#f57c00;">'+purak+'</div></div>';
+  html+='<div class="card"><div class="clabel">अनुत्तीर्ण</div><div class="cval" style="color:#c62828;">'+fail+'</div></div>';
+  html+='<div class="card"><div class="clabel">प्रथम</div><div class="cval" style="color:#1b5e20;">'+pratham+'</div></div>';
+  html+='<div class="card"><div class="clabel">द्वितीय</div><div class="cval" style="color:#0d47a1;">'+dvitiy+'</div></div>';
+  html+='<div class="card"><div class="clabel">तृतीय</div><div class="cval" style="color:#880e4f;">'+tritiy+'</div></div>';
+  html+='</div>';
+  html+='<table><thead><tr><th>क्र.</th><th>नाम</th><th>अनुक्रमांक</th><th>त्रैमा.</th><th>अर्ध.</th><th>वार्ष.</th><th>महायोग</th><th>%</th><th>श्रेणी</th><th>परिणाम</th></tr></thead><tbody>';
+  var rank=0;
+  ranked.forEach(function(obj,i){
+    var st=obj.st; var r=obj.r;
+    rank++;
+    var rc=r.res.includes('उत्तीर्ण')?'#e8f5e9':r.res==='पूरक'?'#fff7ed':'#fff5f5';
+    var tc=r.res.includes('उत्तीर्ण')?'#15803d':r.res==='पूरक'?'#f57c00':'#c62828';
+    html+='<tr style="background:'+rc+';">';
+    html+='<td>'+rank+'</td><td style="text-align:left;padding-left:4px;">'+( st.name||'—')+'</td><td>'+(st.ank||'—')+'</td>';
+    html+='<td>'+r.totTrai+'</td><td>'+r.totArdh+'</td><td>'+r.totVarsh+'</td>';
+    html+='<td style="font-weight:700;">'+r.totF+(r.tG>0?' (+'+r.tG+'G)':'')+'</td>';
+    html+='<td>'+(r.pct||'—')+'</td><td>'+r.shr+'</td>';
+    html+='<td style="font-weight:700;color:'+tc+';">'+r.res+'</td></tr>';
+  });
+  html+='</tbody></table>';
+  html+='<div style="margin-top:8px;font-size:10px;color:#888;text-align:right;">UDISE: 22072510903 | संस्था कोड: 311242 | मुद्रण: '+new Date().toLocaleDateString('hi-IN')+'</div>';
+  html+='<script>window.onload=function(){window.print();}<\/script></body></html>';
+  w.document.write(html);
+  w.document.close();
+}
+
+// ============================================================
+// 2. CSV EXPORT
+// ============================================================
+function exportCSV(){
+  if(!cls.students||cls.students.length===0){ alert('पहले छात्र और अंक भरें!'); return; }
+  var rows=[['क्र.','नाम','पिता','अनुक्रमांक','जन्म तिथि','त्रैमासिक','अर्धवार्षिक','वार्षिक','30% अधिभार','70% अधिभार','महायोग','GRACE','कुल','%','श्रेणी','परिणाम']];
+  cls.students.forEach(function(st,i){
+    var r=calcR(st.id);
+    rows.push([
+      i+1, st.name||'', st.father||'', st.ank||'', st.dob||'',
+      r.totTrai, r.totArdh, r.totVarsh,
+      r.totA30.toFixed?r.totA30.toFixed(1):r.totA30,
+      r.totV70.toFixed?r.totV70.toFixed(1):r.totV70,
+      r.totM, r.tG>0?'+'+r.tG:'0',
+      r.totF, r.pct||'', r.shr, r.res
+    ]);
+  });
+  // subject-wise rows header
+  rows.push([]);
+  rows.push(['--- विषय-वार अंक ---']);
+  var subjHdr=['क्र.','नाम','अनुक्रमांक'];
+  SUBJ.forEach(function(s){ subjHdr.push(s+'-त्रैमा',s+'-अर्ध',s+'-वार्ष',s+'-30%',s+'-70%',s+'-महायोग'); });
+  rows.push(subjHdr);
+  cls.students.forEach(function(st,i){
+    var r=calcR(st.id);
+    var row=[i+1,st.name||'',st.ank||''];
+    r.sr.forEach(function(s){
+      row.push(s.ty===0?0:s.ty, s.ay===0?0:s.ay, s.vy===0?0:s.vy, s.a30, s.v70, s.maha);
+    });
+    rows.push(row);
+  });
+  var csv=rows.map(function(r){ return r.map(function(c){ var s=String(c||''); return s.indexOf(',')>=0||s.indexOf('"')>=0?'"'+s.replace(/"/g,'""')+'"':s; }).join(','); }).join('\r\n');
+  // BOM for Hindi in Excel
+  var blob=new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8;'});
+  var url=URL.createObjectURL(blob);
+  var a=document.createElement('a');
+  a.href=url; a.download='परीक्षाफल_कक्षा'+cls.kk+'_'+cls.s1+cls.s2+'.csv';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(function(){ URL.revokeObjectURL(url); },1000);
+}
+
+// ============================================================
+// 3. SEARCH
+// ============================================================
+var _searchFilter='all';
+function filterSearch(f){
+  _searchFilter=f;
+  ['all','pass','purak','fail'].forEach(function(k){
+    var b=document.getElementById('sf-'+k);
+    if(!b) return;
+    if(k===f){ b.style.background=k==='all'?'#4a6fa5':k==='pass'?'#15803d':k==='purak'?'#f57c00':'#c62828'; b.style.color='white'; }
+    else { b.style.background='white'; b.style.color=k==='all'?'#4a6fa5':k==='pass'?'#15803d':k==='purak'?'#f57c00':'#c62828'; }
+  });
+  var inp=document.getElementById('searchInput');
+  doSearch(inp?inp.value:'');
+}
+function doSearch(q){
+  var el=document.getElementById('searchResults');
+  if(!el) return;
+  if(!cls.students||cls.students.length===0){
+    el.innerHTML='<div style="color:#aaa;text-align:center;padding:20px;">पहले छात्र और अंक भरें।</div>'; return;
+  }
+  q=(q||'').trim().toLowerCase();
+  var list=cls.students.filter(function(st){
+    var r=calcR(st.id);
+    var matchQ=!q||(st.name||'').toLowerCase().indexOf(q)>=0||(st.ank||'').toLowerCase().indexOf(q)>=0;
+    var matchF=_searchFilter==='all'||(_searchFilter==='pass'&&r.res.includes('उत्तीर्ण'))||(_searchFilter==='purak'&&r.res==='पूरक')||(_searchFilter==='fail'&&r.res==='अनुत्तीर्ण');
+    return matchQ&&matchF;
+  });
+  if(!list.length){ el.innerHTML='<div style="color:#aaa;text-align:center;padding:20px;">कोई छात्र नहीं मिला।</div>'; return; }
+  // rank map
+  var ranked=cls.students.map(function(st){ return {id:st.id,f:parseFloat(calcR(st.id).totF)||0}; });
+  ranked.sort(function(a,b){ return b.f-a.f; });
+  var rankMap={};
+  ranked.forEach(function(o,i){ rankMap[o.id]=i+1; });
+  var html='<div style="font-size:11px;color:#888;margin-bottom:6px;">'+list.length+' छात्र मिले</div>';
+  list.forEach(function(st){
+    var r=calcR(st.id);
+    var rc=r.res.includes('उत्तीर्ण')?'#15803d':r.res==='पूरक'?'#f57c00':'#c62828';
+    var bg=r.res.includes('उत्तीर्ण')?'#f0fdf4':r.res==='पूरक'?'#fff7ed':'#fff5f5';
+    html+='<div style="background:'+bg+';border-radius:8px;padding:10px;margin-bottom:8px;border-left:4px solid '+rc+';box-shadow:0 1px 3px rgba(0,0,0,.08);">';
+    html+='<div style="display:flex;align-items:center;gap:8px;">';
+    html+='<div style="width:26px;height:26px;background:#1a1a6e;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;">'+rankMap[st.id]+'</div>';
+    html+='<div style="flex:1;"><div style="font-weight:700;font-size:13px;">'+(st.name||'—')+'</div>';
+    html+='<div style="font-size:10px;color:#888;">अनुक्रमांक: '+(st.ank||'—')+' | पिता: '+(st.father||'—')+'</div></div>';
+    html+='<div style="text-align:right;"><div style="font-weight:700;color:'+rc+';">'+r.res+'</div><div style="font-size:10px;color:#666;">'+(r.pct||'—')+'% | '+r.shr+'</div></div></div>';
+    html+='<div style="display:flex;gap:4px;margin-top:6px;flex-wrap:wrap;font-size:10px;">';
+    html+='<span style="background:#e8eaf6;padding:2px 6px;border-radius:4px;">त्रैमा: <b>'+r.totTrai+'</b></span>';
+    html+='<span style="background:#ffe8e8;padding:2px 6px;border-radius:4px;">अर्ध: <b>'+r.totArdh+'</b></span>';
+    html+='<span style="background:#e8f5e9;padding:2px 6px;border-radius:4px;">वार्ष: <b>'+r.totVarsh+'</b></span>';
+    html+='<span style="background:#ede7f6;padding:2px 6px;border-radius:4px;">महायोग: <b style="color:#4a148c;">'+r.totF+'</b></span>';
+    if(r.tG>0) html+='<span style="background:#fff3e0;padding:2px 6px;border-radius:4px;color:#e65100;">GRACE:+'+r.tG+'</span>';
+    html+='<span style="background:#e0f2fe;padding:2px 6px;border-radius:4px;color:#0277bd;">रैंक: <b>'+rankMap[st.id]+'</b></span>';
+    html+='</div></div>';
+  });
+  el.innerHTML=html;
+}
+
+// ============================================================
+// 4. SUBJECT-WISE ANALYSIS
+// ============================================================
+function buildAnalysis(el){
+  var n=cls.students.length;
+  if(!n){ el.innerHTML='<div style="color:#aaa;text-align:center;padding:20px;">कोई डेटा नहीं।</div>'; return; }
+  var html='';
+  // Overall topper
+  var ranked=cls.students.map(function(st){ var r=calcR(st.id); return {st:st,r:r,f:parseFloat(r.totF)||0}; });
+  ranked.sort(function(a,b){ return b.f-a.f; });
+  var topper=ranked[0];
+  html+='<div style="background:#fffde7;border:1.5px solid #f9a825;border-radius:8px;padding:10px;margin-bottom:10px;display:flex;align-items:center;gap:10px;">';
+  html+='<div style="font-size:28px;">🏆</div>';
+  html+='<div><div style="font-weight:700;color:#f57f17;font-size:13px;">कक्षा टॉपर</div>';
+  html+='<div style="font-weight:700;font-size:15px;">'+(topper.st.name||'—')+'</div>';
+  html+='<div style="font-size:11px;color:#888;">महायोग: '+topper.r.totF+' | '+topper.r.pct+'% | '+topper.r.shr+'</div></div></div>';
+  // Subject-wise table
+  html+='<div style="font-size:12px;font-weight:700;color:#1a1a6e;margin-bottom:6px;">📋 विषय-वार औसत अंक (वार्षिक)</div>';
+  html+='<div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:11px;">';
+  html+='<thead><tr>';
+  html+='<th style="background:#1a1a6e;color:white;padding:5px 4px;border:1px solid #3949ab;text-align:left;">विषय</th>';
+  html+='<th style="background:#1a1a6e;color:white;padding:5px 4px;border:1px solid #3949ab;">औसत</th>';
+  html+='<th style="background:#1a1a6e;color:white;padding:5px 4px;border:1px solid #3949ab;">उत्तीर्ण</th>';
+  html+='<th style="background:#1a1a6e;color:white;padding:5px 4px;border:1px solid #3949ab;">ABS</th>';
+  html+='<th style="background:#1a1a6e;color:white;padding:5px 4px;border:1px solid #3949ab;">सर्वाधिक</th>';
+  html+='<th style="background:#1a1a6e;color:white;padding:5px 4px;border:1px solid #3949ab;">न्यूनतम</th>';
+  html+='</tr></thead><tbody>';
+  SUBJ.forEach(function(subj,si){
+    var vals=[]; var passC=0; var absC=0; var maxV=-1; var minV=999;
+    var maxSt=''; var minSt='';
+    cls.students.forEach(function(st){
+      var m=(cls.marks[st.id]||{})[si]||{};
+      var vsR=m.vs||''; var vpR=m.vp||'';
+      if(vsR==='ABS'||vpR==='ABS'){ absC++; return; }
+      var vs=parseFloat(vsR)||0; var vp=parseFloat(vpR)||0;
+      if(!vs&&!vp) return;
+      var tot=vs+vp;
+      vals.push(tot);
+      if(vs>=25&&vp>=8) passC++;
+      if(tot>maxV){ maxV=tot; maxSt=st.name||'—'; }
+      if(tot<minV){ minV=tot; minSt=st.name||'—'; }
+    });
+    var avg=vals.length>0?(vals.reduce(function(a,b){return a+b;},0)/vals.length).toFixed(1):'—';
+    var passP=vals.length>0?Math.round(passC/vals.length*100)+'%':'—';
+    var bg=si%2===0?'white':'#f8f9ff';
+    html+='<tr style="background:'+bg+';">';
+    html+='<td style="font-weight:700;padding:4px 6px;border:1px solid #ddd;color:#1a1a6e;">'+subj+'</td>';
+    html+='<td style="border:1px solid #ddd;padding:4px;text-align:center;font-weight:700;color:#4a148c;">'+avg+'</td>';
+    html+='<td style="border:1px solid #ddd;padding:4px;text-align:center;color:#15803d;font-weight:700;">'+passP+'</td>';
+    html+='<td style="border:1px solid #ddd;padding:4px;text-align:center;color:'+(absC>0?'#c62828':'#aaa')+';font-weight:700;">'+absC+'</td>';
+    html+='<td style="border:1px solid #ddd;padding:4px;text-align:center;font-size:10px;">'+(maxV>=0?maxV+' ('+maxSt+')':'—')+'</td>';
+    html+='<td style="border:1px solid #ddd;padding:4px;text-align:center;font-size:10px;">'+(minV<999?minV+' ('+minSt+')':'—')+'</td>';
+    html+='</tr>';
+  });
+  html+='</tbody></table></div>';
+  // Bar chart (CSS based)
+  html+='<div style="font-size:12px;font-weight:700;color:#1a1a6e;margin-top:12px;margin-bottom:6px;">📊 विषय-वार उत्तीर्ण % (Bar Chart)</div>';
+  SUBJ.forEach(function(subj,si){
+    var vals=[]; var passC=0;
+    cls.students.forEach(function(st){
+      var m=(cls.marks[st.id]||{})[si]||{};
+      var vsR=m.vs||''; var vpR=m.vp||'';
+      if(vsR==='ABS'||vpR==='ABS') return;
+      var vs=parseFloat(vsR)||0; var vp=parseFloat(vpR)||0;
+      if(!vs&&!vp) return;
+      vals.push(vs+vp);
+      if(vs>=25&&vp>=8) passC++;
+    });
+    var pct=vals.length>0?Math.round(passC/vals.length*100):0;
+    var barC=pct>=75?'#15803d':pct>=50?'#4a6fa5':pct>=33?'#f57c00':'#c62828';
+    html+='<div style="margin-bottom:6px;">';
+    html+='<div style="display:flex;justify-content:space-between;font-size:10px;margin-bottom:2px;"><span style="font-weight:700;">'+subj+'</span><span style="color:#555;">'+pct+'%</span></div>';
+    html+='<div style="background:#eee;border-radius:4px;height:14px;overflow:hidden;">';
+    html+='<div style="background:'+barC+';width:'+pct+'%;height:100%;border-radius:4px;transition:width 0.5s;"></div></div></div>';
+  });
+  // Rank table
+  html+='<div style="font-size:12px;font-weight:700;color:#1a1a6e;margin-top:12px;margin-bottom:6px;">🥇 मेरिट सूची (Rank List)</div>';
+  html+='<div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:11px;">';
+  html+='<thead><tr>';
+  html+='<th style="background:#1a1a6e;color:white;padding:5px;border:1px solid #3949ab;">रैंक</th>';
+  html+='<th style="background:#1a1a6e;color:white;padding:5px;border:1px solid #3949ab;text-align:left;">नाम</th>';
+  html+='<th style="background:#1a1a6e;color:white;padding:5px;border:1px solid #3949ab;">महायोग</th>';
+  html+='<th style="background:#1a1a6e;color:white;padding:5px;border:1px solid #3949ab;">%</th>';
+  html+='<th style="background:#1a1a6e;color:white;padding:5px;border:1px solid #3949ab;">परिणाम</th>';
+  html+='</tr></thead><tbody>';
+  ranked.forEach(function(obj,i){
+    var rc=obj.r.res.includes('उत्तीर्ण')?'#e8f5e9':obj.r.res==='पूरक'?'#fff7ed':'#fff5f5';
+    var tc=obj.r.res.includes('उत्तीर्ण')?'#15803d':obj.r.res==='पूरक'?'#f57c00':'#c62828';
+    var medal=i===0?'🥇':i===1?'🥈':i===2?'🥉':i+1;
+    html+='<tr style="background:'+rc+';">';
+    html+='<td style="border:1px solid #ddd;padding:4px;font-weight:700;font-size:'+(i<3?'14':'11')+'px;">'+medal+'</td>';
+    html+='<td style="border:1px solid #ddd;padding:4px 6px;font-weight:'+(i<3?'700':'400')+';text-align:left;">'+(obj.st.name||'—')+'</td>';
+    html+='<td style="border:1px solid #ddd;padding:4px;font-weight:700;color:#4a148c;">'+obj.r.totF+'</td>';
+    html+='<td style="border:1px solid #ddd;padding:4px;">'+(obj.r.pct||'—')+'</td>';
+    html+='<td style="border:1px solid #ddd;padding:4px;font-weight:700;color:'+tc+';">'+obj.r.res+'</td>';
+    html+='</tr>';
+  });
+  html+='</tbody></table></div>';
+  el.innerHTML=html;
+}
+</script>
+</body>
+</html>
